@@ -1,0 +1,6 @@
+2022-08-28 10:27:10.333 ERROR (MainThread) [homeassistant.components.homeassistant_alerts] Error requesting homeassistant_alerts data: 0, message='Attempt to decode JSON with unexpected mimetype: text/html; charset=utf-8', url=URL('https://alerts.home-assistant.io/alerts.json')
+2022-08-28 22:25:23.940 WARNING (MainThread) [homeassistant.components.websocket_api.http.connection] [547411517616] Disconnected: Did not receive auth message within 10 seconds
+2022-08-28 22:25:34.033 WARNING (MainThread) [homeassistant.components.websocket_api.http.connection] [547411524096] Disconnected: Did not receive auth message within 10 seconds
+2022-08-28 22:25:49.252 WARNING (MainThread) [homeassistant.components.websocket_api.http.connection] [547413454576] Disconnected: Did not receive auth message within 10 seconds
+2022-08-28 22:35:40.409 WARNING (MainThread) [homeassistant.components.websocket_api.http.connection] [547412711488] Disconnected: Did not receive auth message within 10 seconds
+2022-08-29 12:39:19.481 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for esp8266-tuya @ 192.168.2.18: Error connecting to ('192.168.2.18', 6053): [Errno 113] Connect call failed ('192.168.2.18', 6053)

@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "minor_version": 1,
+  "key": "person",
+  "data": {
+    "items": [
+      {
+        "name": "yoonki",
+        "user_id": "b5fc770375d448fc87c08b2ed57afbfb",
+        "device_trackers": [
+          "device_tracker.yoonkis_iphone"
+        ],
+        "id": "yoonki",
+        "picture": null
+      }
+    ]
+  }
+}

@@ -1,0 +1,182 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "lovelace",
+  "data": {
+    "config": {
+      "title": "Office_RaspberryPi",
+      "views": [
+        {
+          "theme": "Backend-selected",
+          "path": "default_view",
+          "title": "Andante Systems",
+          "badges": [],
+          "cards": [
+            {
+              "type": "entities",
+              "entities": [
+                "person.yoonki"
+              ]
+            },
+            {
+              "type": "weather-forecast",
+              "entity": "weather.forecast_office_raspberrypi",
+              "show_forecast": false
+            },
+            {
+              "type": "glance",
+              "entities": [
+                {
+                  "entity": "sensor.office_temperature"
+                },
+                {
+                  "entity": "sensor.office_humidity"
+                }
+              ]
+            },
+            {
+              "type": "entities",
+              "entities": [
+                "sensor.flame_sensor_analog",
+                "binary_sensor.flame_sensor_digital",
+                "sensor.mq_5_gas_analog",
+                "binary_sensor.mq_5_gas_digital",
+                "sensor.office_humidity",
+                "sensor.office_temperature",
+                "sensor.sound_sensor_analog",
+                "binary_sensor.sound_sensor_digital",
+                "sensor.uv_sensor_analog"
+              ],
+              "title": "esp32-doit-temp"
+            },
+            {
+              "type": "picture-entity",
+              "entity": "camera.esp32_cam"
+            },
+            {
+              "type": "entities",
+              "entities": [
+                {
+                  "entity": "switch.esp32_cam_flash_1sec_on",
+                  "name": "Flash 1sec On"
+                },
+                {
+                  "entity": "light.esp32_cam_flash_on_off",
+                  "name": "Flash On/OFF"
+                }
+              ],
+              "title": "esp32-cam"
+            }
+          ]
+        },
+        {
+          "theme": "Backend-selected",
+          "title": "CAM",
+          "path": "cam",
+          "icon": "cam",
+          "badges": [],
+          "cards": []
+        },
+        {
+          "theme": "Backend-selected",
+          "title": "CAMERA",
+          "path": "esp32-cam",
+          "icon": "",
+          "badges": [],
+          "cards": [
+            {
+              "show_state": true,
+              "show_name": true,
+              "camera_view": "auto",
+              "type": "picture-entity",
+              "entity": "camera.esp32_cam",
+              "hold_action": {
+                "action": "call-service",
+                "service": "automation.reload",
+                "data": {},
+                "target": {}
+              }
+            },
+            {
+              "square": false,
+              "columns": 2,
+              "type": "grid",
+              "cards": [
+                {
+                  "show_name": false,
+                  "show_icon": true,
+                  "type": "button",
+                  "tap_action": {
+                    "action": "toggle"
+                  },
+                  "entity": "light.esp32_cam_flash_on_off",
+                  "show_state": true
+                },
+                {
+                  "show_name": false,
+                  "show_icon": true,
+                  "type": "button",
+                  "tap_action": {
+                    "action": "toggle"
+                  },
+                  "entity": "switch.esp32_cam_flash_1sec_on",
+                  "icon": "mdi:flash-auto",
+                  "show_state": true
+                }
+              ]
+            },
+            {
+              "show_name": true,
+              "show_icon": true,
+              "type": "button",
+              "tap_action": {
+                "action": "toggle"
+              },
+              "entity": "light.esp32_doit_led_on_off",
+              "icon": "mdi:led-off",
+              "icon_height": "80px"
+            }
+          ]
+        },
+        {
+          "theme": "Backend-selected",
+          "title": "Sensors",
+          "path": "sensors",
+          "badges": [],
+          "cards": [
+            {
+              "type": "entities",
+              "entities": [
+                "sensor.flame_sensor_analog",
+                "binary_sensor.flame_sensor_digital",
+                "sensor.mq_5_gas_analog",
+                "binary_sensor.mq_5_gas_digital",
+                "sensor.office_humidity",
+                "sensor.office_temperature",
+                "sensor.sound_sensor_analog",
+                "binary_sensor.sound_sensor_digital",
+                "sensor.uv_sensor_analog"
+              ],
+              "title": "esp32-doit-temp"
+            }
+          ]
+        },
+        {
+          "theme": "Backend-selected",
+          "title": "iPhone Camera",
+          "path": "iphone-camera",
+          "badges": [],
+          "cards": [
+            {
+              "show_state": true,
+              "show_name": true,
+              "camera_view": "live",
+              "type": "picture-entity",
+              "entity": "camera.iphone"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

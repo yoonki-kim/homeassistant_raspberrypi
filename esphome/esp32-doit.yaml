@@ -1,0 +1,47 @@
+esphome:
+  name: esp32-doit
+
+esp32:
+  board: esp32doit-devkit-v1
+  framework:
+    type: arduino
+
+# Enable logging
+logger:
+
+# Enable Home Assistant API
+api:
+  encryption:
+    key: "nW7Da/eWOabkLNxS2lMlhmEex4cEB0Law6SRecW6nXU="
+
+ota:
+  password: "2c15982b406a16131b039bd25fea7c05"
+
+wifi:
+  ssid: !secret wifi_ssid
+  password: !secret wifi_password
+
+  # Enable fallback hotspot (captive portal) in case wifi connection fails
+  ap:
+    ssid: "Esp32-Doit Fallback Hotspot"
+    password: "nBxGpaDpkCEl"
+
+captive_portal:
+
+# Example configuration entry
+switch:
+  - platform: gpio
+    pin: GPIO2
+    id: relay
+    name: "esp32-doit LED 1sec ON"
+    icon: "mdi:flash-auto"
+    on_turn_on:
+    - delay: 1sec
+    - switch.turn_off: relay
+    
+# Example configuration entry
+light:
+  - platform: status_led
+    name: "esp32-doit LED On/Off"
+    pin: GPIO2
+    icon: "mdi:lightbulb"

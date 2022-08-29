@@ -1,0 +1,152 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "esphome.6d29c02c71ab6b60082ba90d42cdc422",
+  "data": {
+    "device_info": {
+      "uses_password": false,
+      "name": "esp32-doit-temp",
+      "mac_address": "A4:CF:12:45:A2:C4",
+      "compilation_time": "Aug 16 2022, 17:58:36",
+      "model": "esp32dev",
+      "has_deep_sleep": false,
+      "esphome_version": "2022.6.3",
+      "project_name": "",
+      "project_version": "",
+      "webserver_port": 0
+    },
+    "services": [],
+    "api_version": {
+      "major": 1,
+      "minor": 6
+    },
+    "binary_sensor": [
+      {
+        "object_id": "mq-5_gas_digital",
+        "key": 2101629266,
+        "name": "MQ-5 Gas Digital",
+        "unique_id": "esp32-doit-tempbinary_sensormq-5_gas_digital",
+        "disabled_by_default": false,
+        "icon": "",
+        "entity_category": 0,
+        "device_class": "",
+        "is_status_binary_sensor": false
+      },
+      {
+        "object_id": "flame_sensor_digital",
+        "key": 3719690294,
+        "name": "Flame Sensor Digital",
+        "unique_id": "esp32-doit-tempbinary_sensorflame_sensor_digital",
+        "disabled_by_default": false,
+        "icon": "",
+        "entity_category": 0,
+        "device_class": "",
+        "is_status_binary_sensor": false
+      },
+      {
+        "object_id": "sound_sensor_digital",
+        "key": 682998578,
+        "name": "Sound Sensor Digital",
+        "unique_id": "esp32-doit-tempbinary_sensorsound_sensor_digital",
+        "disabled_by_default": false,
+        "icon": "",
+        "entity_category": 0,
+        "device_class": "",
+        "is_status_binary_sensor": false
+      }
+    ],
+    "sensor": [
+      {
+        "object_id": "office_temperature",
+        "key": 3442512522,
+        "name": "Office Temperature",
+        "unique_id": "esp32-doit-tempsensoroffice_temperature",
+        "disabled_by_default": false,
+        "icon": "",
+        "entity_category": 0,
+        "device_class": "temperature",
+        "unit_of_measurement": "°C",
+        "accuracy_decimals": 1,
+        "force_update": false,
+        "state_class": 1,
+        "last_reset_type": 0
+      },
+      {
+        "object_id": "office_humidity",
+        "key": 3096986643,
+        "name": "Office Humidity",
+        "unique_id": "esp32-doit-tempsensoroffice_humidity",
+        "disabled_by_default": false,
+        "icon": "",
+        "entity_category": 0,
+        "device_class": "humidity",
+        "unit_of_measurement": "%",
+        "accuracy_decimals": 0,
+        "force_update": false,
+        "state_class": 1,
+        "last_reset_type": 0
+      },
+      {
+        "object_id": "mq-5_gas_analog",
+        "key": 731390398,
+        "name": "MQ-5 Gas Analog",
+        "unique_id": "esp32-doit-tempsensormq-5_gas_analog",
+        "disabled_by_default": false,
+        "icon": "",
+        "entity_category": 0,
+        "device_class": "voltage",
+        "unit_of_measurement": "V",
+        "accuracy_decimals": 2,
+        "force_update": false,
+        "state_class": 1,
+        "last_reset_type": 0
+      },
+      {
+        "object_id": "flame_sensor_analog",
+        "key": 1925637978,
+        "name": "Flame Sensor Analog",
+        "unique_id": "esp32-doit-tempsensorflame_sensor_analog",
+        "disabled_by_default": false,
+        "icon": "",
+        "entity_category": 0,
+        "device_class": "voltage",
+        "unit_of_measurement": "V",
+        "accuracy_decimals": 2,
+        "force_update": false,
+        "state_class": 1,
+        "last_reset_type": 0
+      },
+      {
+        "object_id": "uv_sensor_analog",
+        "key": 444000140,
+        "name": "UV Sensor Analog",
+        "unique_id": "esp32-doit-tempsensoruv_sensor_analog",
+        "disabled_by_default": false,
+        "icon": "",
+        "entity_category": 0,
+        "device_class": "voltage",
+        "unit_of_measurement": "V",
+        "accuracy_decimals": 2,
+        "force_update": false,
+        "state_class": 1,
+        "last_reset_type": 0
+      },
+      {
+        "object_id": "sound_sensor_analog",
+        "key": 1693704734,
+        "name": "Sound Sensor Analog",
+        "unique_id": "esp32-doit-tempsensorsound_sensor_analog",
+        "disabled_by_default": false,
+        "icon": "",
+        "entity_category": 0,
+        "device_class": "voltage",
+        "unit_of_measurement": "V",
+        "accuracy_decimals": 2,
+        "force_update": false,
+        "state_class": 1,
+        "last_reset_type": 0
+      }
+    ],
+    "text_sensor": []
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "esphome.b32f931b7d2a0adac8691d916eabfe6c",
+  "data": {
+    "device_info": {
+      "uses_password": false,
+      "name": "esp8266-tuya",
+      "mac_address": "BC:FF:4D:09:A6:C9",
+      "compilation_time": "Aug 25 2022, 08:53:07",
+      "model": "esp01_1m",
+      "has_deep_sleep": false,
+      "esphome_version": "2022.8.0",
+      "project_name": "",
+      "project_version": "",
+      "webserver_port": 0
+    },
+    "services": [],
+    "api_version": {
+      "major": 1,
+      "minor": 6
+    },
+    "cover": [
+      {
+        "object_id": "motor1",
+        "key": 1659935005,
+        "name": "motor1",
+        "unique_id": "esp8266-tuyacovermotor1",
+        "disabled_by_default": false,
+        "icon": "",
+        "entity_category": 0,
+        "assumed_state": false,
+        "supports_position": true,
+        "supports_tilt": false,
+        "device_class": ""
+      }
+    ]
+  }
+}

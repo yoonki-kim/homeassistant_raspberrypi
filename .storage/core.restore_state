@@ -1,0 +1,576 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "core.restore_state",
+  "data": [
+    {
+      "state": {
+        "entity_id": "person.yoonki",
+        "state": "home",
+        "attributes": {
+          "editable": false,
+          "id": "yoonki",
+          "latitude": 37.637542724609375,
+          "longitude": 126.6800618576865,
+          "gps_accuracy": 41,
+          "source": "device_tracker.yoonkis_iphone",
+          "user_id": "b5fc770375d448fc87c08b2ed57afbfb",
+          "friendly_name": "yoonki"
+        },
+        "last_changed": "2022-08-28T23:48:38.661355+00:00",
+        "last_updated": "2022-08-28T23:48:42.537764+00:00",
+        "context": {
+          "id": "01GBKDQ1D99SJFPJKK0VZ98D74",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2022-08-29T06:27:06.229803+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "update.home_assistant_supervisor_update",
+        "state": "off",
+        "attributes": {
+          "auto_update": true,
+          "installed_version": "2022.08.3",
+          "in_progress": false,
+          "latest_version": "2022.08.3",
+          "release_summary": null,
+          "release_url": "https://github.com/home-assistant/supervisor/releases/tag/2022.08.3",
+          "skipped_version": null,
+          "title": "Home Assistant Supervisor",
+          "entity_picture": "https://brands.home-assistant.io/hassio/icon.png",
+          "friendly_name": "Home Assistant Supervisor Update",
+          "supported_features": 1
+        },
+        "last_changed": "2022-08-27T07:27:03.608424+00:00",
+        "last_updated": "2022-08-27T07:27:03.608424+00:00",
+        "context": {
+          "id": "01GBF34VXRV11MHSS3HPN4SRKA",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2022-08-29T06:27:06.229803+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "update.home_assistant_core_update",
+        "state": "on",
+        "attributes": {
+          "auto_update": false,
+          "installed_version": "2022.8.5",
+          "in_progress": false,
+          "latest_version": "2022.8.7",
+          "release_summary": null,
+          "release_url": "https://www.home-assistant.io/latest-release-notes/",
+          "skipped_version": null,
+          "title": "Home Assistant Core",
+          "entity_picture": "https://brands.home-assistant.io/homeassistant/icon.png",
+          "friendly_name": "Home Assistant Core Update",
+          "supported_features": 11
+        },
+        "last_changed": "2022-08-27T07:27:03.610252+00:00",
+        "last_updated": "2022-08-27T07:27:03.610252+00:00",
+        "context": {
+          "id": "01GBF34VXT3B40VXQH1VJAY64K",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2022-08-29T06:27:06.229803+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "update.duck_dns_update",
+        "state": "off",
+        "attributes": {
+          "auto_update": true,
+          "installed_version": "1.15.0",
+          "in_progress": false,
+          "latest_version": "1.15.0",
+          "release_summary": "# Changelog\n\n## 1.15.0\n\n- Use Supervisor API to detect IPv6 host addresses, selectable by interface\n- Split IPv4 and IPv6 updates as duckdns skips v4 detection with v6 present\n- Fix misleading help text regarding IPv6 address autodetection\n- Disable Docke",
+          "release_url": null,
+          "skipped_version": null,
+          "title": "Duck DNS",
+          "entity_picture": "/api/hassio/addons/core_duckdns/icon",
+          "friendly_name": "Duck DNS Update",
+          "supported_features": 25
+        },
+        "last_changed": "2022-08-27T07:27:03.610656+00:00",
+        "last_updated": "2022-08-27T07:27:03.610656+00:00",
+        "context": {
+          "id": "01GBF34VXT8BFZMJ3SQ74YNY45",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2022-08-29T06:27:06.229803+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "update.esphome_update",
+        "state": "off",
+        "attributes": {
+          "auto_update": true,
+          "installed_version": "2022.8.0",
+          "in_progress": false,
+          "latest_version": "2022.8.0",
+          "release_summary": "See https://esphome.io/changelog/index.html\n",
+          "release_url": null,
+          "skipped_version": null,
+          "title": "ESPHome",
+          "entity_picture": "/api/hassio/addons/5c53de3b_esphome/icon",
+          "friendly_name": "ESPHome Update",
+          "supported_features": 25
+        },
+        "last_changed": "2022-08-27T07:27:03.610942+00:00",
+        "last_updated": "2022-08-27T07:27:03.610942+00:00",
+        "context": {
+          "id": "01GBF34VXTZ0X9DX5A9SJ1XM0F",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2022-08-29T06:27:06.229803+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "update.studio_code_server_update",
+        "state": "off",
+        "attributes": {
+          "auto_update": true,
+          "installed_version": "5.3.0",
+          "in_progress": false,
+          "latest_version": "5.3.0",
+          "release_summary": "## What’s changed\n\n## ⬆️ Dependency updates\n\n- ⬆️ Upgrades add-on base image to 6.1.1 @frenck (#486)\n- ⬆️ Upgrades code-server to 4.6.0 @frenck (#487)\n",
+          "release_url": null,
+          "skipped_version": null,
+          "title": "Studio Code Server",
+          "entity_picture": "/api/hassio/addons/a0d7b954_vscode/icon",
+          "friendly_name": "Studio Code Server Update",
+          "supported_features": 25
+        },
+        "last_changed": "2022-08-27T07:27:03.611214+00:00",
+        "last_updated": "2022-08-27T07:27:03.611214+00:00",
+        "context": {
+          "id": "01GBF34VXVCJR5G2CX8H7Y8WVQ",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2022-08-29T06:27:06.229803+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "update.terminal_ssh_update",
+        "state": "off",
+        "attributes": {
+          "auto_update": true,
+          "installed_version": "9.6.0",
+          "in_progress": false,
+          "latest_version": "9.6.0",
+          "release_summary": "# Changelog\n\n## 9.6.0\n\n**Breaking change**: RSA keys generated using the SHA-1 hash algorithm\nwere disabled by OpenSSH due to a security vulnerability. If you find\nyour RSA key does not work after update you will need to make a new key\nwith a stronger alg",
+          "release_url": null,
+          "skipped_version": null,
+          "title": "Terminal & SSH",
+          "entity_picture": "/api/hassio/addons/core_ssh/icon",
+          "friendly_name": "Terminal & SSH Update",
+          "supported_features": 25
+        },
+        "last_changed": "2022-08-27T07:27:03.611535+00:00",
+        "last_updated": "2022-08-27T07:27:03.611535+00:00",
+        "context": {
+          "id": "01GBF34VXVYFAF2VRAA7XGQ2D6",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2022-08-29T06:27:06.229803+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.yoonkis_iphone_activity",
+        "state": "Automotive",
+        "attributes": {
+          "Confidence": "High",
+          "Types": [
+            "Automotive"
+          ],
+          "icon": "mdi:car",
+          "friendly_name": "Yoonki’s iPhone Activity"
+        },
+        "last_changed": "2022-08-28T09:07:55.972811+00:00",
+        "last_updated": "2022-08-28T09:07:55.972811+00:00",
+        "context": {
+          "id": "01GBHVA9E4D17F72JBE3VXA5P7",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2022-08-29T06:27:06.229803+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.yoonkis_iphone_battery_level",
+        "state": "100",
+        "attributes": {
+          "unit_of_measurement": "%",
+          "device_class": "battery",
+          "icon": "mdi:battery",
+          "friendly_name": "Yoonki’s iPhone Battery Level"
+        },
+        "last_changed": "2022-08-28T23:45:11.161490+00:00",
+        "last_updated": "2022-08-28T23:45:11.161490+00:00",
+        "context": {
+          "id": "01GBKDGJZSY02X9H4QPXPB3CB6",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2022-08-29T06:27:06.229803+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.yoonkis_iphone_storage",
+        "state": "17.61",
+        "attributes": {
+          "Available": "8.05GB",
+          "Available (Important)": "15.97GB",
+          "Available (Opportunistic)": "11.27GB",
+          "Total": "63.98GB",
+          "unit_of_measurement": "% available",
+          "icon": "mdi:database",
+          "friendly_name": "Yoonki’s iPhone Storage"
+        },
+        "last_changed": "2022-08-28T23:48:38.788158+00:00",
+        "last_updated": "2022-08-28T23:48:38.788158+00:00",
+        "context": {
+          "id": "01GBKDPXR4BAJYT679A40946D8",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2022-08-29T06:27:06.229803+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.yoonkis_iphone_battery_state",
+        "state": "Not Charging",
+        "attributes": {
+          "Low Power Mode": false,
+          "icon": "mdi:battery",
+          "friendly_name": "Yoonki’s iPhone Battery State"
+        },
+        "last_changed": "2022-08-28T09:17:59.791327+00:00",
+        "last_updated": "2022-08-28T23:45:11.162816+00:00",
+        "context": {
+          "id": "01GBKDGJZTAPH0FG4F5NEWC3V9",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2022-08-29T06:27:06.229803+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.yoonkis_iphone_bssid",
+        "state": "Not Connected",
+        "attributes": {
+          "icon": "mdi:wifi-off",
+          "friendly_name": "Yoonki’s iPhone BSSID"
+        },
+        "last_changed": "2022-08-28T02:40:15.092647+00:00",
+        "last_updated": "2022-08-28T02:40:15.092647+00:00",
+        "context": {
+          "id": "01GBH54DQMVC6XZ8J23TPRWJSM",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2022-08-29T06:27:06.229803+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.yoonkis_iphone_ssid",
+        "state": "Not Connected",
+        "attributes": {
+          "icon": "mdi:wifi-off",
+          "friendly_name": "Yoonki’s iPhone SSID"
+        },
+        "last_changed": "2022-08-28T02:40:15.091768+00:00",
+        "last_updated": "2022-08-28T02:40:15.091768+00:00",
+        "context": {
+          "id": "01GBH54DQKDDEKC14YHKW20NY6",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2022-08-29T06:27:06.229803+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.yoonkis_iphone_connection_type",
+        "state": "Cellular",
+        "attributes": {
+          "Cellular Technology": "4G",
+          "icon": "mdi:signal",
+          "friendly_name": "Yoonki’s iPhone Connection Type"
+        },
+        "last_changed": "2022-08-28T03:17:22.026492+00:00",
+        "last_updated": "2022-08-28T03:17:22.026492+00:00",
+        "context": {
+          "id": "01GBH78CFAHF7F8RYZTR2Z0K76",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2022-08-29T06:27:06.229803+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.yoonkis_iphone_sim_1",
+        "state": "KT",
+        "attributes": {
+          "Allows VoIP": true,
+          "Carrier ID": "0000000100000001",
+          "Carrier Name": "KT",
+          "Current Radio Technology": "Long-Term Evolution (LTE)",
+          "ISO Country Code": "kr",
+          "Mobile Country Code": "450",
+          "Mobile Network Code": "08",
+          "icon": "mdi:sim",
+          "friendly_name": "Yoonki’s iPhone SIM 1"
+        },
+        "last_changed": "2022-08-27T07:27:04.900535+00:00",
+        "last_updated": "2022-08-28T03:17:22.026800+00:00",
+        "context": {
+          "id": "01GBH78CFAWR4AJANF7PHDWKGE",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2022-08-29T06:27:06.229803+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.yoonkis_iphone_floors_descended",
+        "state": "2",
+        "attributes": {
+          "unit_of_measurement": "floors",
+          "icon": "mdi:stairs-down",
+          "friendly_name": "Yoonki’s iPhone Floors Descended"
+        },
+        "last_changed": "2022-08-28T23:45:11.160683+00:00",
+        "last_updated": "2022-08-28T23:45:11.160683+00:00",
+        "context": {
+          "id": "01GBKDGJZRK1D66A5R6WQFE71F",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2022-08-29T06:27:06.229803+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.yoonkis_iphone_floors_ascended",
+        "state": "0",
+        "attributes": {
+          "unit_of_measurement": "floors",
+          "icon": "mdi:stairs-up",
+          "friendly_name": "Yoonki’s iPhone Floors Ascended"
+        },
+        "last_changed": "2022-08-28T23:45:11.160355+00:00",
+        "last_updated": "2022-08-28T23:45:11.160355+00:00",
+        "context": {
+          "id": "01GBKDGJZRSRZW4BH997MZM65E",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2022-08-29T06:27:06.229803+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.yoonkis_iphone_distance",
+        "state": "177",
+        "attributes": {
+          "unit_of_measurement": "m",
+          "icon": "mdi:hiking",
+          "friendly_name": "Yoonki’s iPhone Distance"
+        },
+        "last_changed": "2022-08-28T23:45:11.159676+00:00",
+        "last_updated": "2022-08-28T23:45:11.159676+00:00",
+        "context": {
+          "id": "01GBKDGJZQWSD50D71SFM1TFCW",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2022-08-29T06:27:06.229803+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.yoonkis_iphone_steps",
+        "state": "316",
+        "attributes": {
+          "unit_of_measurement": "steps",
+          "icon": "mdi:walk",
+          "friendly_name": "Yoonki’s iPhone Steps"
+        },
+        "last_changed": "2022-08-28T23:45:11.161001+00:00",
+        "last_updated": "2022-08-28T23:45:11.161001+00:00",
+        "context": {
+          "id": "01GBKDGJZSDNC4QA5JQND1SEGJ",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2022-08-29T06:27:06.229803+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.yoonkis_iphone_average_active_pace",
+        "state": "1",
+        "attributes": {
+          "unit_of_measurement": "m/s",
+          "icon": "mdi:speedometer",
+          "friendly_name": "Yoonki’s iPhone Average Active Pace"
+        },
+        "last_changed": "2022-08-28T02:40:15.081988+00:00",
+        "last_updated": "2022-08-28T02:40:15.081988+00:00",
+        "context": {
+          "id": "01GBH54DQ94NZXX41QW51HFYE8",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2022-08-29T06:27:06.229803+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.yoonkis_iphone_geocoded_location",
+        "state": "10090\n대한민국\n경기도\n김포시\n장기동 2083-5",
+        "attributes": {
+          "Administrative Area": "경기도",
+          "Areas Of Interest": "N/A",
+          "Country": "대한민국",
+          "Inland Water": "N/A",
+          "ISO Country Code": "KR",
+          "Locality": "김포시",
+          "Location": [
+            37.637542724609375,
+            126.6800618576865
+          ],
+          "Name": "장기동 2083-5",
+          "Ocean": "N/A",
+          "Postal Code": "10090",
+          "Sub Administrative Area": "N/A",
+          "Sub Locality": "장기동",
+          "Sub Thoroughfare": "2083-5",
+          "Thoroughfare": "장기동",
+          "Time Zone": "Asia/Seoul",
+          "Zones": [
+            "Supervised_VirtualBox",
+            "Office_RaspberryPi"
+          ],
+          "icon": "mdi:map",
+          "friendly_name": "Yoonki’s iPhone Geocoded Location"
+        },
+        "last_changed": "2022-08-28T23:48:38.790253+00:00",
+        "last_updated": "2022-08-28T23:48:42.732310+00:00",
+        "context": {
+          "id": "01GBKDQ1KC89TF0CG50CJW1MV0",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2022-08-29T06:27:06.229803+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.yoonkis_iphone_last_update_trigger",
+        "state": "Geographic Region Entered",
+        "attributes": {
+          "icon": "mdi:cellphone-wireless",
+          "friendly_name": "Yoonki’s iPhone Last Update Trigger"
+        },
+        "last_changed": "2022-08-28T23:48:38.791146+00:00",
+        "last_updated": "2022-08-28T23:48:38.791146+00:00",
+        "context": {
+          "id": "01GBKDPXR70EJ1ZX669K53MV1F",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2022-08-29T06:27:06.229803+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "binary_sensor.yoonkis_iphone_focus",
+        "state": "off",
+        "attributes": {
+          "icon": "mdi:moon-waning-crescent",
+          "friendly_name": "Yoonki’s iPhone Focus"
+        },
+        "last_changed": "2022-08-28T02:40:15.094776+00:00",
+        "last_updated": "2022-08-28T02:40:15.094776+00:00",
+        "context": {
+          "id": "01GBH54DQPJ99N6407HDZMC59Z",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2022-08-29T06:27:06.229803+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "device_tracker.yoonkis_iphone",
+        "state": "home",
+        "attributes": {
+          "source_type": "gps",
+          "battery_level": 100,
+          "latitude": 37.637542724609375,
+          "longitude": 126.6800618576865,
+          "gps_accuracy": 41,
+          "altitude": 14.013666152954102,
+          "vertical_accuracy": 17.190820693969727,
+          "friendly_name": "Yoonki’s iPhone"
+        },
+        "last_changed": "2022-08-28T23:48:42.536786+00:00",
+        "last_updated": "2022-08-28T23:48:42.536786+00:00",
+        "context": {
+          "id": "01GBKDQ1D8YS36RBGFC89BY21X",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2022-08-29T06:27:06.229803+00:00"
+    }
+  ]
+}

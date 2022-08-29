@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "core.area_registry",
+  "data": {
+    "areas": [
+      {
+        "name": "거실",
+        "id": "geosil",
+        "picture": null
+      },
+      {
+        "name": "주방",
+        "id": "jubang",
+        "picture": null
+      },
+      {
+        "name": "침실",
+        "id": "cimsil",
+        "picture": null
+      },
+      {
+        "name": "test",
+        "id": "test",
+        "picture": null
+      }
+    ]
+  }
+}

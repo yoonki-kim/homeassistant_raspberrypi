@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "auth_provider.homeassistant",
+  "data": {
+    "users": [
+      {
+        "username": "yoonki",
+        "password": "JDJiJDEyJG12QXkyYThNM1U3UGsxNFhRRk16dC5iYlhydjRSM0h1L2RESWZvWFVUM0JwN3lqRVFYdGhl"
+      }
+    ]
+  }
+}

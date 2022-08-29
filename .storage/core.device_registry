@@ -1,0 +1,378 @@
+{
+  "version": 1,
+  "minor_version": 3,
+  "key": "core.device_registry",
+  "data": {
+    "devices": [
+      {
+        "config_entries": [
+          "9aa560922beff9667ac02e2d23fef577"
+        ],
+        "connections": [],
+        "identifiers": [
+          [
+            "hassio",
+            "core"
+          ]
+        ],
+        "manufacturer": "Home Assistant",
+        "model": "Home Assistant Core",
+        "name": "Home Assistant Core",
+        "sw_version": "2022.8.5",
+        "hw_version": null,
+        "entry_type": "service",
+        "id": "857c0de6145f4321489ae68e28539615",
+        "via_device_id": null,
+        "area_id": null,
+        "name_by_user": null,
+        "disabled_by": null,
+        "configuration_url": null
+      },
+      {
+        "config_entries": [
+          "9aa560922beff9667ac02e2d23fef577"
+        ],
+        "connections": [],
+        "identifiers": [
+          [
+            "hassio",
+            "supervisor"
+          ]
+        ],
+        "manufacturer": "Home Assistant",
+        "model": "Home Assistant Supervisor",
+        "name": "Home Assistant Supervisor",
+        "sw_version": "2022.08.3",
+        "hw_version": null,
+        "entry_type": "service",
+        "id": "add0522338356fb73abe70ddaef1b409",
+        "via_device_id": null,
+        "area_id": null,
+        "name_by_user": null,
+        "disabled_by": null,
+        "configuration_url": null
+      },
+      {
+        "config_entries": [
+          "1daeef1ecc8a890899e660c0eced9eb4"
+        ],
+        "connections": [],
+        "identifiers": [
+          [
+            "met"
+          ]
+        ],
+        "manufacturer": "Met.no",
+        "model": "Forecast",
+        "name": "Forecast",
+        "sw_version": null,
+        "hw_version": null,
+        "entry_type": "service",
+        "id": "21e6eba153d83fe60ac9dcc0a6652ce3",
+        "via_device_id": null,
+        "area_id": null,
+        "name_by_user": null,
+        "disabled_by": null,
+        "configuration_url": "https://www.met.no/en"
+      },
+      {
+        "config_entries": [
+          "9aa560922beff9667ac02e2d23fef577"
+        ],
+        "connections": [],
+        "identifiers": [
+          [
+            "hassio",
+            "core_duckdns"
+          ]
+        ],
+        "manufacturer": "Official add-ons",
+        "model": "Home Assistant Add-on",
+        "name": "Duck DNS",
+        "sw_version": "1.15.0",
+        "hw_version": null,
+        "entry_type": "service",
+        "id": "8667c8ece1ac69f086458de351d4c14c",
+        "via_device_id": null,
+        "area_id": null,
+        "name_by_user": null,
+        "disabled_by": null,
+        "configuration_url": "homeassistant://hassio/addon/core_duckdns"
+      },
+      {
+        "config_entries": [
+          "9aa560922beff9667ac02e2d23fef577"
+        ],
+        "connections": [],
+        "identifiers": [
+          [
+            "hassio",
+            "5c53de3b_esphome"
+          ]
+        ],
+        "manufacturer": "ESPHome",
+        "model": "Home Assistant Add-on",
+        "name": "ESPHome",
+        "sw_version": "2022.8.0",
+        "hw_version": null,
+        "entry_type": "service",
+        "id": "8d4c70d223e8e1c6627ad08aa95ff93e",
+        "via_device_id": null,
+        "area_id": null,
+        "name_by_user": null,
+        "disabled_by": null,
+        "configuration_url": "homeassistant://hassio/addon/5c53de3b_esphome"
+      },
+      {
+        "config_entries": [
+          "9aa560922beff9667ac02e2d23fef577"
+        ],
+        "connections": [],
+        "identifiers": [
+          [
+            "hassio",
+            "a0d7b954_vscode"
+          ]
+        ],
+        "manufacturer": "Home Assistant Community Add-ons",
+        "model": "Home Assistant Add-on",
+        "name": "Studio Code Server",
+        "sw_version": "5.3.0",
+        "hw_version": null,
+        "entry_type": "service",
+        "id": "4295c806acee1b2e5acfa4f184be0c4b",
+        "via_device_id": null,
+        "area_id": null,
+        "name_by_user": null,
+        "disabled_by": null,
+        "configuration_url": "homeassistant://hassio/addon/a0d7b954_vscode"
+      },
+      {
+        "config_entries": [
+          "9aa560922beff9667ac02e2d23fef577"
+        ],
+        "connections": [],
+        "identifiers": [
+          [
+            "hassio",
+            "core_ssh"
+          ]
+        ],
+        "manufacturer": "Official add-ons",
+        "model": "Home Assistant Add-on",
+        "name": "Terminal & SSH",
+        "sw_version": "9.6.0",
+        "hw_version": null,
+        "entry_type": "service",
+        "id": "3583b912aa82621cef216c8ccc410b50",
+        "via_device_id": null,
+        "area_id": null,
+        "name_by_user": null,
+        "disabled_by": null,
+        "configuration_url": "homeassistant://hassio/addon/core_ssh"
+      },
+      {
+        "config_entries": [
+          "03eea6d6342e54e0a97848cb5976f17e"
+        ],
+        "connections": [
+          [
+            "upnp",
+            "uuid:fc4ec57e-b051-11db-88f8-0060085db3f6"
+          ],
+          [
+            "mac",
+            "88:36:6c:29:92:ce"
+          ]
+        ],
+        "identifiers": [
+          [
+            "upnp",
+            "uuid:fc4ec57e-b051-11db-88f8-0060085db3f6::urn:schemas-upnp-org:device:InternetGatewayDevice:1"
+          ]
+        ],
+        "manufacturer": "EFM Networks",
+        "model": "ipTIME mini3",
+        "name": "EFM Networks ipTIME mini3",
+        "sw_version": null,
+        "hw_version": null,
+        "entry_type": null,
+        "id": "4d2ccaecf37d73bd5ec0951021c8c13a",
+        "via_device_id": null,
+        "area_id": "test",
+        "name_by_user": null,
+        "disabled_by": null,
+        "configuration_url": null
+      },
+      {
+        "config_entries": [
+          "0cf7896e7dc66b92b6683ab0b840ba6b"
+        ],
+        "connections": [
+          [
+            "mac",
+            "3c:71:bf:5a:55:28"
+          ]
+        ],
+        "identifiers": [],
+        "manufacturer": "espressif",
+        "model": "esp32cam",
+        "name": "esp32-cam",
+        "sw_version": "2022.8.0 (Aug 25 2022, 12:12:06)",
+        "hw_version": null,
+        "entry_type": null,
+        "id": "665874f7db07869c4b0e49b70cb62323",
+        "via_device_id": null,
+        "area_id": "test",
+        "name_by_user": null,
+        "disabled_by": null,
+        "configuration_url": null
+      },
+      {
+        "config_entries": [
+          "e1cace7552d67d4d313f26ad042b92e2"
+        ],
+        "connections": [
+          [
+            "mac",
+            "b4:e6:2d:f6:da:09"
+          ]
+        ],
+        "identifiers": [],
+        "manufacturer": "espressif",
+        "model": "esp32doit-devkit-v1",
+        "name": "esp32-doit",
+        "sw_version": "2022.6.3 (Aug 16 2022, 18:13:17)",
+        "hw_version": null,
+        "entry_type": null,
+        "id": "62a7f19bef94dedec4899a1d87193ba4",
+        "via_device_id": null,
+        "area_id": "test",
+        "name_by_user": null,
+        "disabled_by": null,
+        "configuration_url": null
+      },
+      {
+        "config_entries": [
+          "6d29c02c71ab6b60082ba90d42cdc422"
+        ],
+        "connections": [
+          [
+            "mac",
+            "a4:cf:12:45:a2:c4"
+          ]
+        ],
+        "identifiers": [],
+        "manufacturer": "espressif",
+        "model": "esp32dev",
+        "name": "esp32-doit-temp",
+        "sw_version": "2022.6.3 (Aug 16 2022, 17:58:36)",
+        "hw_version": null,
+        "entry_type": null,
+        "id": "07880c32ee867ea3729def3596b26e68",
+        "via_device_id": null,
+        "area_id": "test",
+        "name_by_user": null,
+        "disabled_by": null,
+        "configuration_url": null
+      },
+      {
+        "config_entries": [
+          "c53b9bdc1e13c5debe6f20821163992a"
+        ],
+        "connections": [],
+        "identifiers": [
+          [
+            "mjpeg",
+            "c53b9bdc1e13c5debe6f20821163992a"
+          ]
+        ],
+        "manufacturer": null,
+        "model": null,
+        "name": "iPhone",
+        "sw_version": null,
+        "hw_version": null,
+        "entry_type": null,
+        "id": "3e6717a759609edfa7a7f00d801f0295",
+        "via_device_id": null,
+        "area_id": "test",
+        "name_by_user": null,
+        "disabled_by": null,
+        "configuration_url": null
+      },
+      {
+        "config_entries": [
+          "599e8a33f1014f0d823683bf003541e9"
+        ],
+        "connections": [],
+        "identifiers": [
+          [
+            "mobile_app",
+            "A5FC2DD0-85DB-4151-AD3D-7AF083A9B8B7"
+          ]
+        ],
+        "manufacturer": "Apple",
+        "model": "iPhone8,1",
+        "name": "Yoonki’s iPhone",
+        "sw_version": "15.6.1",
+        "hw_version": null,
+        "entry_type": null,
+        "id": "1399b22692abca03ff17cafa9d6e699c",
+        "via_device_id": null,
+        "area_id": null,
+        "name_by_user": null,
+        "disabled_by": null,
+        "configuration_url": null
+      },
+      {
+        "config_entries": [
+          "b32f931b7d2a0adac8691d916eabfe6c"
+        ],
+        "connections": [
+          [
+            "mac",
+            "bc:ff:4d:09:a6:c9"
+          ]
+        ],
+        "identifiers": [],
+        "manufacturer": "espressif",
+        "model": "esp01_1m",
+        "name": "esp8266-tuya",
+        "sw_version": "2022.8.0 (Aug 25 2022, 08:53:07)",
+        "hw_version": null,
+        "entry_type": null,
+        "id": "00be4160c1017a1ca65386cae94255f9",
+        "via_device_id": null,
+        "area_id": "test",
+        "name_by_user": null,
+        "disabled_by": null,
+        "configuration_url": null
+      },
+      {
+        "config_entries": [
+          "d574238f81ec11c168baac96156a3ca6"
+        ],
+        "connections": [
+          [
+            "mac",
+            "30:ae:a4:28:36:48"
+          ]
+        ],
+        "identifiers": [],
+        "manufacturer": "espressif",
+        "model": "esp32dev",
+        "name": "esp32-nodemcu",
+        "sw_version": "2022.6.3 (Aug 26 2022, 07:19:24)",
+        "hw_version": null,
+        "entry_type": null,
+        "id": "06eea3984dfb91fcf3c1507f80b744f1",
+        "via_device_id": null,
+        "area_id": "test",
+        "name_by_user": null,
+        "disabled_by": null,
+        "configuration_url": null
+      }
+    ],
+    "deleted_devices": []
+  }
+}

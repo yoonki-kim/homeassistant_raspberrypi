@@ -1,0 +1,69 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "esphome.0cf7896e7dc66b92b6683ab0b840ba6b",
+  "data": {
+    "device_info": {
+      "uses_password": false,
+      "name": "esp32-cam",
+      "mac_address": "3C:71:BF:5A:55:28",
+      "compilation_time": "Aug 25 2022, 12:12:06",
+      "model": "esp32cam",
+      "has_deep_sleep": false,
+      "esphome_version": "2022.8.0",
+      "project_name": "",
+      "project_version": "",
+      "webserver_port": 0
+    },
+    "services": [],
+    "api_version": {
+      "major": 1,
+      "minor": 6
+    },
+    "camera": [
+      {
+        "object_id": "esp32-cam",
+        "key": 1016602698,
+        "name": "ESP32-CAM",
+        "unique_id": "esp32-camcameraesp32-cam",
+        "disabled_by_default": false,
+        "icon": "",
+        "entity_category": 0
+      }
+    ],
+    "switch": [
+      {
+        "object_id": "esp32-cam_flash_1sec_on",
+        "key": 259277712,
+        "name": "ESP32-CAM Flash 1sec On",
+        "unique_id": "esp32-camswitchesp32-cam_flash_1sec_on",
+        "disabled_by_default": false,
+        "icon": "",
+        "entity_category": 0,
+        "assumed_state": false,
+        "device_class": ""
+      }
+    ],
+    "light": [
+      {
+        "object_id": "esp32-cam_flash_onoff",
+        "key": 894363662,
+        "name": "ESP32-CAM Flash On/OFF",
+        "unique_id": "esp32-camlightesp32-cam_flash_onoff",
+        "disabled_by_default": false,
+        "icon": "",
+        "entity_category": 0,
+        "supported_color_modes": [
+          1
+        ],
+        "min_mireds": 0.0,
+        "max_mireds": 0.0,
+        "effects": [],
+        "legacy_supports_brightness": false,
+        "legacy_supports_rgb": false,
+        "legacy_supports_white_value": false,
+        "legacy_supports_color_temperature": false
+      }
+    ]
+  }
+}

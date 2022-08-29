@@ -1,0 +1,58 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "esphome.e1cace7552d67d4d313f26ad042b92e2",
+  "data": {
+    "device_info": {
+      "uses_password": false,
+      "name": "esp32-doit",
+      "mac_address": "B4:E6:2D:F6:DA:09",
+      "compilation_time": "Aug 16 2022, 18:13:17",
+      "model": "esp32doit-devkit-v1",
+      "has_deep_sleep": false,
+      "esphome_version": "2022.6.3",
+      "project_name": "",
+      "project_version": "",
+      "webserver_port": 0
+    },
+    "services": [],
+    "api_version": {
+      "major": 1,
+      "minor": 6
+    },
+    "light": [
+      {
+        "object_id": "esp32-doit_led_onoff",
+        "key": 221299452,
+        "name": "esp32-doit LED On/Off",
+        "unique_id": "esp32-doitlightesp32-doit_led_onoff",
+        "disabled_by_default": false,
+        "icon": "mdi:lightbulb",
+        "entity_category": 0,
+        "supported_color_modes": [
+          1
+        ],
+        "min_mireds": 0.0,
+        "max_mireds": 0.0,
+        "effects": [],
+        "legacy_supports_brightness": false,
+        "legacy_supports_rgb": false,
+        "legacy_supports_white_value": false,
+        "legacy_supports_color_temperature": false
+      }
+    ],
+    "switch": [
+      {
+        "object_id": "esp32-doit_led_1sec_on",
+        "key": 1247302062,
+        "name": "esp32-doit LED 1sec ON",
+        "unique_id": "esp32-doitswitchesp32-doit_led_1sec_on",
+        "disabled_by_default": false,
+        "icon": "mdi:flash-auto",
+        "entity_category": 0,
+        "assumed_state": false,
+        "device_class": ""
+      }
+    ]
+  }
+}

@@ -1,0 +1,249 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "core.config_entries",
+  "data": {
+    "entries": [
+      {
+        "entry_id": "ce684afc19da2788710ff19ef649d6f2",
+        "version": 1,
+        "domain": "bluetooth",
+        "title": "Bluetooth",
+        "data": {},
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "integration_discovery",
+        "unique_id": null,
+        "disabled_by": null
+      },
+      {
+        "entry_id": "9aa560922beff9667ac02e2d23fef577",
+        "version": 1,
+        "domain": "hassio",
+        "title": "Supervisor",
+        "data": {},
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "system",
+        "unique_id": "hassio",
+        "disabled_by": null
+      },
+      {
+        "entry_id": "a84128009f3c36828ccd0c7ace369256",
+        "version": 1,
+        "domain": "sun",
+        "title": "Sun",
+        "data": {},
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "import",
+        "unique_id": null,
+        "disabled_by": null
+      },
+      {
+        "entry_id": "650a6dc02bde2267db5f40425a0ea69a",
+        "version": 1,
+        "domain": "radio_browser",
+        "title": "Radio Browser",
+        "data": {},
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "onboarding",
+        "unique_id": null,
+        "disabled_by": null
+      },
+      {
+        "entry_id": "1daeef1ecc8a890899e660c0eced9eb4",
+        "version": 1,
+        "domain": "met",
+        "title": "Home",
+        "data": {
+          "track_home": true
+        },
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "onboarding",
+        "unique_id": null,
+        "disabled_by": null
+      },
+      {
+        "entry_id": "f25b766f2486c295b43c86fb413fe989",
+        "version": 1,
+        "domain": "rpi_power",
+        "title": "Raspberry Pi Power Supply Checker",
+        "data": {},
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "onboarding",
+        "unique_id": null,
+        "disabled_by": null
+      },
+      {
+        "entry_id": "03eea6d6342e54e0a97848cb5976f17e",
+        "version": 1,
+        "domain": "upnp",
+        "title": "EFM Networks ipTIME mini3",
+        "data": {
+          "udn": "uuid:fc4ec57e-b051-11db-88f8-0060085db3f6",
+          "st": "urn:schemas-upnp-org:device:InternetGatewayDevice:1",
+          "original_udn": "uuid:fc4ec57e-b051-11db-88f8-0060085db3f6",
+          "location": "http://192.168.2.1:2050/etc/linuxigd/gatedesc.xml",
+          "mac_address": "88:36:6c:29:92:ce"
+        },
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "ssdp",
+        "unique_id": "uuid:fc4ec57e-b051-11db-88f8-0060085db3f6::urn:schemas-upnp-org:device:InternetGatewayDevice:1",
+        "disabled_by": null
+      },
+      {
+        "entry_id": "0cf7896e7dc66b92b6683ab0b840ba6b",
+        "version": 1,
+        "domain": "esphome",
+        "title": "esp32-cam",
+        "data": {
+          "host": "192.168.2.102",
+          "port": 6053,
+          "password": "",
+          "noise_psk": "R3DUYY3EFpkgnBvQ0E5TAcCxwXS2P7WhfyRQzgCdClM="
+        },
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "zeroconf",
+        "unique_id": "esp32-cam",
+        "disabled_by": null
+      },
+      {
+        "entry_id": "e1cace7552d67d4d313f26ad042b92e2",
+        "version": 1,
+        "domain": "esphome",
+        "title": "esp32-doit",
+        "data": {
+          "host": "192.168.2.101",
+          "port": 6053,
+          "password": "",
+          "noise_psk": "nW7Da/eWOabkLNxS2lMlhmEex4cEB0Law6SRecW6nXU="
+        },
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "zeroconf",
+        "unique_id": "esp32-doit",
+        "disabled_by": null
+      },
+      {
+        "entry_id": "6d29c02c71ab6b60082ba90d42cdc422",
+        "version": 1,
+        "domain": "esphome",
+        "title": "esp32-doit-temp",
+        "data": {
+          "host": "192.168.2.103",
+          "port": 6053,
+          "password": "",
+          "noise_psk": "RV9rR0LHNdcvHmSu+V6vEf+DkPBxHgGtvEcCuB5XyZg="
+        },
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "zeroconf",
+        "unique_id": "esp32-doit-temp",
+        "disabled_by": null
+      },
+      {
+        "entry_id": "c53b9bdc1e13c5debe6f20821163992a",
+        "version": 1,
+        "domain": "mjpeg",
+        "title": "iPhone",
+        "data": {},
+        "options": {
+          "authentication": "basic",
+          "mjpeg_url": "http://192.168.2.13/live",
+          "password": "Bang0627",
+          "still_image_url": "http://192.168.2.13/live",
+          "username": "yoonki",
+          "verify_ssl": true
+        },
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "user",
+        "unique_id": null,
+        "disabled_by": null
+      },
+      {
+        "entry_id": "599e8a33f1014f0d823683bf003541e9",
+        "version": 1,
+        "domain": "mobile_app",
+        "title": "Yoonki’s iPhone",
+        "data": {
+          "app_name": "Home Assistant",
+          "device_name": "Yoonki’s iPhone",
+          "app_version": "2022.3 (2022.358)",
+          "app_data": {
+            "push_token": "fihSuzFn-UzgsR_cMMYmhv:APA91bHREkduOMd1tguqthTbjD-j_dG2PYE0TCaSnWqNZCkbuH71dh8WImgLj4FhZlSSa0NL-zFCfq9ZsfGsx3R49r-L-2txND5ukd84VrMOcPtKUsKt3igkNUoWkTgAskL3EqCgDx7K",
+            "push_url": "https://mobile-apps.home-assistant.io/api/sendPushNotification"
+          },
+          "model": "iPhone8,1",
+          "os_version": "15.6.1",
+          "supports_encryption": true,
+          "manufacturer": "Apple",
+          "app_id": "io.robbie.HomeAssistant",
+          "os_name": "iOS",
+          "device_id": "A5FC2DD0-85DB-4151-AD3D-7AF083A9B8B7",
+          "webhook_id": "e2772b36b6fa6109361791752bccbcbfa648267613692a278d09d8f19de66f0f",
+          "secret": "2b10235e0273d336fa15ee981ce16197f5ac5df34f462a93f5bad1a05cc99529",
+          "user_id": "b5fc770375d448fc87c08b2ed57afbfb"
+        },
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "registration",
+        "unique_id": "io.robbie.HomeAssistant-A5FC2DD0-85DB-4151-AD3D-7AF083A9B8B7",
+        "disabled_by": null
+      },
+      {
+        "entry_id": "b32f931b7d2a0adac8691d916eabfe6c",
+        "version": 1,
+        "domain": "esphome",
+        "title": "esp8266-tuya",
+        "data": {
+          "host": "192.168.2.18",
+          "port": 6053,
+          "password": "",
+          "noise_psk": "DDe035Cr81Feubj3/CfrDpvmibEuIPhC2jhRFDL0/tc="
+        },
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "zeroconf",
+        "unique_id": "esp8266-tuya",
+        "disabled_by": null
+      },
+      {
+        "entry_id": "d574238f81ec11c168baac96156a3ca6",
+        "version": 1,
+        "domain": "esphome",
+        "title": "esp32-nodemcu",
+        "data": {
+          "host": "192.168.2.104",
+          "port": 6053,
+          "password": "",
+          "noise_psk": "7bC7wMx4SANCbapWQOiUpRohXB7PRLcqBGY5RYBREcw="
+        },
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "zeroconf",
+        "unique_id": "esp32-nodemcu",
+        "disabled_by": null
+      }
+    ]
+  }
+}

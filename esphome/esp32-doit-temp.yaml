@@ -1,0 +1,119 @@
+esphome:
+  name: esp32-doit-temp
+
+esp32:
+  board: esp32dev
+  framework:
+    type: arduino
+
+# Enable logging
+logger:
+
+# Enable Home Assistant API
+api:
+  encryption:
+    key: "RV9rR0LHNdcvHmSu+V6vEf+DkPBxHgGtvEcCuB5XyZg="
+
+ota:
+  password: "e2ce2e94aad469c3cec6a8590ece6356"
+
+wifi:
+  ssid: !secret wifi_ssid
+  password: !secret wifi_password
+
+  # Enable fallback hotspot (captive portal) in case wifi connection fails
+  ap:
+    ssid: "Esp32-Doit-Temp Fallback Hotspot"
+    password: "SetzWnIrYXtF"
+
+captive_portal:
+
+# Example configuration entry
+sensor:
+  # MQ-5 Gas Sensor
+  - platform: dht
+    pin: GPIO15
+    temperature:
+      name: "Office Temperature"
+    humidity:
+      name: "Office Humidity"
+    update_interval: 2s
+    
+  # MQ-5 Gas Sensor Analog
+  - platform: adc
+    pin: A0
+    # raw: true
+    attenuation: auto
+    filters:
+      - multiply: 1
+    name: "MQ-5 Gas Analog"
+    update_interval: 2s
+    
+  # Flame Sensor Analog
+  - platform: adc
+    pin: A3
+    # raw: true
+    attenuation: auto
+    filters:
+      - multiply: 1
+    name: "Flame Sensor Analog"
+    update_interval: 2s
+
+  # UV Sensor Analog
+  - platform: adc
+    pin: A6
+    # raw: true
+    attenuation: auto
+    filters:
+      - multiply: 1
+    name: "UV Sensor Analog"
+    update_interval: 2s
+
+  # Sound Sensor Analog
+  - platform: adc
+    pin: A7
+    # raw: true
+    attenuation: auto
+    filters:
+      - multiply: 1
+    name: "Sound Sensor Analog"
+    update_interval: 2s
+
+binary_sensor:
+  # MQ-5 Gas Sensor Digital
+  - platform: gpio
+    pin:
+      number: GPIO4
+      inverted: true
+      mode:
+        input: true
+        pullup: true
+    name: "MQ-5 Gas Digital"
+    
+  # Flame Sensor Digital
+  - platform: gpio
+    pin:
+      number: GPIO16
+      inverted: true
+      mode:
+        input: true
+        pullup: true
+    name: "Flame Sensor Digital"
+    
+  # Sound Sensor Digital
+  - platform: gpio
+    pin:
+      number: GPIO17
+      inverted: true
+      mode:
+        input: true
+        pullup: true
+    name: "Sound Sensor Digital"
+    filters:
+      - delayed_on: 20ms
+      - delayed_off: 10ms
+
+
+
+
+
