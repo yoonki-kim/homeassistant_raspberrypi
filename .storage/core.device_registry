@@ -42,7 +42,7 @@
         "manufacturer": "Home Assistant",
         "model": "Home Assistant Supervisor",
         "name": "Home Assistant Supervisor",
-        "sw_version": "2022.08.3",
+        "sw_version": "2022.08.6",
         "hw_version": null,
         "entry_type": "service",
         "id": "add0522338356fb73abe70ddaef1b409",
@@ -113,7 +113,7 @@
         "manufacturer": "ESPHome",
         "model": "Home Assistant Add-on",
         "name": "ESPHome",
-        "sw_version": "2022.8.0",
+        "sw_version": "2022.8.3",
         "hw_version": null,
         "entry_type": "service",
         "id": "8d4c70d223e8e1c6627ad08aa95ff93e",
@@ -161,7 +161,7 @@
         "manufacturer": "Official add-ons",
         "model": "Home Assistant Add-on",
         "name": "Terminal & SSH",
-        "sw_version": "9.6.0",
+        "sw_version": "9.6.1",
         "hw_version": null,
         "entry_type": "service",
         "id": "3583b912aa82621cef216c8ccc410b50",
@@ -170,39 +170,6 @@
         "name_by_user": null,
         "disabled_by": null,
         "configuration_url": "homeassistant://hassio/addon/core_ssh"
-      },
-      {
-        "config_entries": [
-          "03eea6d6342e54e0a97848cb5976f17e"
-        ],
-        "connections": [
-          [
-            "upnp",
-            "uuid:fc4ec57e-b051-11db-88f8-0060085db3f6"
-          ],
-          [
-            "mac",
-            "88:36:6c:29:92:ce"
-          ]
-        ],
-        "identifiers": [
-          [
-            "upnp",
-            "uuid:fc4ec57e-b051-11db-88f8-0060085db3f6::urn:schemas-upnp-org:device:InternetGatewayDevice:1"
-          ]
-        ],
-        "manufacturer": "EFM Networks",
-        "model": "ipTIME mini3",
-        "name": "EFM Networks ipTIME mini3",
-        "sw_version": null,
-        "hw_version": null,
-        "entry_type": null,
-        "id": "4d2ccaecf37d73bd5ec0951021c8c13a",
-        "via_device_id": null,
-        "area_id": "test",
-        "name_by_user": null,
-        "disabled_by": null,
-        "configuration_url": null
       },
       {
         "config_entries": [
@@ -266,60 +233,12 @@
         "manufacturer": "espressif",
         "model": "esp32dev",
         "name": "esp32-doit-temp",
-        "sw_version": "2022.6.3 (Aug 16 2022, 17:58:36)",
+        "sw_version": "2022.8.3 (Sep  9 2022, 13:01:40)",
         "hw_version": null,
         "entry_type": null,
         "id": "07880c32ee867ea3729def3596b26e68",
         "via_device_id": null,
         "area_id": "test",
-        "name_by_user": null,
-        "disabled_by": null,
-        "configuration_url": null
-      },
-      {
-        "config_entries": [
-          "c53b9bdc1e13c5debe6f20821163992a"
-        ],
-        "connections": [],
-        "identifiers": [
-          [
-            "mjpeg",
-            "c53b9bdc1e13c5debe6f20821163992a"
-          ]
-        ],
-        "manufacturer": null,
-        "model": null,
-        "name": "iPhone",
-        "sw_version": null,
-        "hw_version": null,
-        "entry_type": null,
-        "id": "3e6717a759609edfa7a7f00d801f0295",
-        "via_device_id": null,
-        "area_id": "test",
-        "name_by_user": null,
-        "disabled_by": null,
-        "configuration_url": null
-      },
-      {
-        "config_entries": [
-          "599e8a33f1014f0d823683bf003541e9"
-        ],
-        "connections": [],
-        "identifiers": [
-          [
-            "mobile_app",
-            "A5FC2DD0-85DB-4151-AD3D-7AF083A9B8B7"
-          ]
-        ],
-        "manufacturer": "Apple",
-        "model": "iPhone8,1",
-        "name": "Yoonki’s iPhone",
-        "sw_version": "15.6.1",
-        "hw_version": null,
-        "entry_type": null,
-        "id": "1399b22692abca03ff17cafa9d6e699c",
-        "via_device_id": null,
-        "area_id": null,
         "name_by_user": null,
         "disabled_by": null,
         "configuration_url": null
@@ -350,8 +269,161 @@
       },
       {
         "config_entries": [
-          "d574238f81ec11c168baac96156a3ca6"
+          "9aa560922beff9667ac02e2d23fef577"
         ],
+        "connections": [],
+        "identifiers": [
+          [
+            "hassio",
+            "core_configurator"
+          ]
+        ],
+        "manufacturer": "Official add-ons",
+        "model": "Home Assistant Add-on",
+        "name": "File editor",
+        "sw_version": "5.4.1",
+        "hw_version": null,
+        "entry_type": "service",
+        "id": "a92f6c35b6e019b1b11802f0228019e4",
+        "via_device_id": null,
+        "area_id": null,
+        "name_by_user": null,
+        "disabled_by": null,
+        "configuration_url": "homeassistant://hassio/addon/core_configurator"
+      },
+      {
+        "config_entries": [
+          "99182fa8ab632ec30308a6bcb890e281"
+        ],
+        "connections": [],
+        "identifiers": [
+          [
+            "mjpeg",
+            "99182fa8ab632ec30308a6bcb890e281"
+          ]
+        ],
+        "manufacturer": null,
+        "model": null,
+        "name": "iPhone6s",
+        "sw_version": null,
+        "hw_version": null,
+        "entry_type": null,
+        "id": "7ec59255fac83d341abaf268080534cd",
+        "via_device_id": null,
+        "area_id": "test",
+        "name_by_user": null,
+        "disabled_by": null,
+        "configuration_url": null
+      },
+      {
+        "config_entries": [
+          "70b90890037fe17d9e2939c3c2f8578e"
+        ],
+        "connections": [],
+        "identifiers": [
+          [
+            "mobile_app",
+            "A5FC2DD0-85DB-4151-AD3D-7AF083A9B8B7"
+          ]
+        ],
+        "manufacturer": "Apple",
+        "model": "iPhone8,1",
+        "name": "Yoonki’s iPhone",
+        "sw_version": "15.6.1",
+        "hw_version": null,
+        "entry_type": null,
+        "id": "1399b22692abca03ff17cafa9d6e699c",
+        "via_device_id": null,
+        "area_id": null,
+        "name_by_user": null,
+        "disabled_by": null,
+        "configuration_url": null
+      },
+      {
+        "config_entries": [
+          "f3bec8d11e100b45b82767e6b071be91"
+        ],
+        "connections": [],
+        "identifiers": [
+          [
+            "mobile_app",
+            "31BA6864-2FD1-49F5-B70F-2E170F8ACA81"
+          ]
+        ],
+        "manufacturer": "Apple",
+        "model": "iPad4,4",
+        "name": "Yoonki’s iPad",
+        "sw_version": "12.5.5",
+        "hw_version": null,
+        "entry_type": null,
+        "id": "bbea8d6438c58f41dc0bac8cd4361d3e",
+        "via_device_id": null,
+        "area_id": null,
+        "name_by_user": null,
+        "disabled_by": null,
+        "configuration_url": null
+      }
+    ],
+    "deleted_devices": [
+      {
+        "config_entries": [],
+        "connections": [],
+        "identifiers": [
+          [
+            "mjpeg",
+            "c53b9bdc1e13c5debe6f20821163992a"
+          ]
+        ],
+        "id": "3e6717a759609edfa7a7f00d801f0295",
+        "orphaned_timestamp": 1663062646.5553958
+      },
+      {
+        "config_entries": [],
+        "connections": [
+          [
+            "mac",
+            "88:36:6c:29:92:ce"
+          ],
+          [
+            "upnp",
+            "uuid:fc4ec57e-b051-11db-88f8-0060085db3f6"
+          ]
+        ],
+        "identifiers": [
+          [
+            "upnp",
+            "uuid:fc4ec57e-b051-11db-88f8-0060085db3f6::urn:schemas-upnp-org:device:InternetGatewayDevice:1"
+          ]
+        ],
+        "id": "4d2ccaecf37d73bd5ec0951021c8c13a",
+        "orphaned_timestamp": 1663062652.88316
+      },
+      {
+        "config_entries": [],
+        "connections": [],
+        "identifiers": [
+          [
+            "mjpeg",
+            "8a41ce019890ff95a4a499f8597c4028"
+          ]
+        ],
+        "id": "d3a6ebf38879c2283f61f4aa4a570dc1",
+        "orphaned_timestamp": 1663063997.581075
+      },
+      {
+        "config_entries": [],
+        "connections": [],
+        "identifiers": [
+          [
+            "mjpeg",
+            "b3bed95fa506e550eb607634bd026f7e"
+          ]
+        ],
+        "id": "cf6439d32459a726d1a0015819f37fb5",
+        "orphaned_timestamp": 1663064399.9157507
+      },
+      {
+        "config_entries": [],
         "connections": [
           [
             "mac",
@@ -359,20 +431,9 @@
           ]
         ],
         "identifiers": [],
-        "manufacturer": "espressif",
-        "model": "esp32dev",
-        "name": "esp32-nodemcu",
-        "sw_version": "2022.6.3 (Aug 26 2022, 07:19:24)",
-        "hw_version": null,
-        "entry_type": null,
         "id": "06eea3984dfb91fcf3c1507f80b744f1",
-        "via_device_id": null,
-        "area_id": "test",
-        "name_by_user": null,
-        "disabled_by": null,
-        "configuration_url": null
+        "orphaned_timestamp": 1663132814.2850235
       }
-    ],
-    "deleted_devices": []
+    ]
   }
 }

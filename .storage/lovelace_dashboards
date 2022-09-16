@@ -5,7 +5,7 @@
   "data": {
     "items": [
       {
-        "show_in_sidebar": false,
+        "show_in_sidebar": true,
         "icon": "mdi:view-dashboard",
         "title": "마이 대쉬보드",
         "require_admin": false,

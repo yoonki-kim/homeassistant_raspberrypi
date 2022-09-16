@@ -1,6 +1,639 @@
-2022-08-28 10:27:10.333 ERROR (MainThread) [homeassistant.components.homeassistant_alerts] Error requesting homeassistant_alerts data: 0, message='Attempt to decode JSON with unexpected mimetype: text/html; charset=utf-8', url=URL('https://alerts.home-assistant.io/alerts.json')
-2022-08-28 22:25:23.940 WARNING (MainThread) [homeassistant.components.websocket_api.http.connection] [547411517616] Disconnected: Did not receive auth message within 10 seconds
-2022-08-28 22:25:34.033 WARNING (MainThread) [homeassistant.components.websocket_api.http.connection] [547411524096] Disconnected: Did not receive auth message within 10 seconds
-2022-08-28 22:25:49.252 WARNING (MainThread) [homeassistant.components.websocket_api.http.connection] [547413454576] Disconnected: Did not receive auth message within 10 seconds
-2022-08-28 22:35:40.409 WARNING (MainThread) [homeassistant.components.websocket_api.http.connection] [547412711488] Disconnected: Did not receive auth message within 10 seconds
-2022-08-29 12:39:19.481 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for esp8266-tuya @ 192.168.2.18: Error connecting to ('192.168.2.18', 6053): [Errno 113] Connect call failed ('192.168.2.18', 6053)
+2022-09-14 14:13:33.140 WARNING (MainThread) [hass_nabucasa.cloud_api] Fetched https://alexa-api.nabucasa.com/access_token (400)
+2022-09-14 14:13:38.574 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for esp32-nodemcu @ 192.168.10.122: Invalid encryption key
+2022-09-14 14:14:08.217 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for esp32-cam @ 192.168.2.102: Timeout while connecting to ('192.168.2.102', 6053)
+2022-09-14 14:14:08.220 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for esp32-doit @ 192.168.2.101: Timeout while connecting to ('192.168.2.101', 6053)
+2022-09-14 14:14:08.223 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for esp8266-tuya @ 192.168.2.18: Timeout while connecting to ('192.168.2.18', 6053)
+2022-09-14 14:18:50.775 WARNING (MainThread) [hass_nabucasa.cloud_api] Fetched https://alexa-api.nabucasa.com/access_token (400)
+2022-09-14 14:18:50.779 ERROR (MainThread) [homeassistant] Error doing job: Task exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/components/cloud/alexa_config.py", line 392, in _handle_entity_registry_updated
+    await self._sync_helper(to_update, to_remove)
+  File "/usr/src/homeassistant/homeassistant/components/cloud/alexa_config.py", line 336, in _sync_helper
+    await self.async_get_access_token()
+  File "/usr/src/homeassistant/homeassistant/components/cloud/alexa_config.py", line 187, in async_get_access_token
+    raise alexa_errors.RequireRelink
+homeassistant.components.alexa.errors.RequireRelink
+2022-09-14 14:20:15.211 WARNING (MainThread) [hass_nabucasa.cloud_api] Fetched https://alexa-api.nabucasa.com/access_token (400)
+2022-09-14 14:20:15.217 ERROR (MainThread) [homeassistant] Error doing job: Task exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/components/cloud/alexa_config.py", line 392, in _handle_entity_registry_updated
+    await self._sync_helper(to_update, to_remove)
+  File "/usr/src/homeassistant/homeassistant/components/cloud/alexa_config.py", line 336, in _sync_helper
+    await self.async_get_access_token()
+  File "/usr/src/homeassistant/homeassistant/components/cloud/alexa_config.py", line 187, in async_get_access_token
+    raise alexa_errors.RequireRelink
+homeassistant.components.alexa.errors.RequireRelink
+2022-09-14 14:20:15.225 WARNING (MainThread) [hass_nabucasa.cloud_api] Fetched https://alexa-api.nabucasa.com/access_token (400)
+2022-09-14 14:20:15.229 ERROR (MainThread) [homeassistant] Error doing job: Task exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/components/cloud/alexa_config.py", line 392, in _handle_entity_registry_updated
+    await self._sync_helper(to_update, to_remove)
+  File "/usr/src/homeassistant/homeassistant/components/cloud/alexa_config.py", line 336, in _sync_helper
+    await self.async_get_access_token()
+  File "/usr/src/homeassistant/homeassistant/components/cloud/alexa_config.py", line 187, in async_get_access_token
+    raise alexa_errors.RequireRelink
+homeassistant.components.alexa.errors.RequireRelink
+2022-09-14 14:22:45.461 ERROR (MainThread) [aiohttp.server] Error handling request
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/urllib3/connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+  File "/usr/local/lib/python3.10/site-packages/urllib3/util/connection.py", line 95, in create_connection
+    raise err
+  File "/usr/local/lib/python3.10/site-packages/urllib3/util/connection.py", line 85, in create_connection
+    sock.connect(sa)
+OSError: [Errno 113] Host is unreachable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/urllib3/connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "/usr/local/lib/python3.10/site-packages/urllib3/connectionpool.py", line 398, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/usr/local/lib/python3.10/site-packages/urllib3/connection.py", line 239, in request
+    super(HTTPConnection, self).request(method, url, body=body, headers=headers)
+  File "/usr/local/lib/python3.10/http/client.py", line 1282, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/usr/local/lib/python3.10/http/client.py", line 1328, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/usr/local/lib/python3.10/http/client.py", line 1277, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/local/lib/python3.10/http/client.py", line 1037, in _send_output
+    self.send(msg)
+  File "/usr/local/lib/python3.10/http/client.py", line 975, in send
+    self.connect()
+  File "/usr/local/lib/python3.10/site-packages/urllib3/connection.py", line 205, in connect
+    conn = self._new_conn()
+  File "/usr/local/lib/python3.10/site-packages/urllib3/connection.py", line 186, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7f9f4e3520>: Failed to establish a new connection: [Errno 113] Host is unreachable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/requests/adapters.py", line 489, in send
+    resp = conn.urlopen(
+  File "/usr/local/lib/python3.10/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    retries = retries.increment(
+  File "/usr/local/lib/python3.10/site-packages/urllib3/util/retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='192.168.10.183', port=80): Max retries exceeded with url: /live (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f9f4e3520>: Failed to establish a new connection: [Errno 113] Host is unreachable'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_protocol.py", line 435, in _handle_request
+    resp = await request_handler(request)
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_app.py", line 504, in _handle
+    resp = await handler(request)
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_middlewares.py", line 117, in impl
+    return await handler(request)
+  File "/usr/src/homeassistant/homeassistant/components/http/security_filter.py", line 60, in security_filter_middleware
+    return await handler(request)
+  File "/usr/src/homeassistant/homeassistant/components/http/forwarded.py", line 100, in forwarded_middleware
+    return await handler(request)
+  File "/usr/src/homeassistant/homeassistant/components/http/request_context.py", line 28, in request_context_middleware
+    return await handler(request)
+  File "/usr/src/homeassistant/homeassistant/components/http/ban.py", line 82, in ban_middleware
+    return await handler(request)
+  File "/usr/src/homeassistant/homeassistant/components/http/auth.py", line 236, in auth_middleware
+    return await handler(request)
+  File "/usr/src/homeassistant/homeassistant/components/http/view.py", line 136, in handle
+    result = await result
+  File "/usr/src/homeassistant/homeassistant/components/camera/__init__.py", line 729, in get
+    return await self.handle(request, camera)
+  File "/usr/src/homeassistant/homeassistant/components/camera/__init__.py", line 747, in handle
+    image = await _async_get_image(
+  File "/usr/src/homeassistant/homeassistant/components/camera/__init__.py", line 169, in _async_get_image
+    if image_bytes := await camera.async_camera_image(
+  File "/usr/src/homeassistant/homeassistant/components/mjpeg/camera.py", line 130, in async_camera_image
+    image = await self.hass.async_add_executor_job(self.camera_image)
+  File "/usr/local/lib/python3.10/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/usr/src/homeassistant/homeassistant/components/mjpeg/camera.py", line 168, in camera_image
+    req = requests.get(self._mjpeg_url, stream=True, timeout=10)
+  File "/usr/local/lib/python3.10/site-packages/requests/api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+  File "/usr/local/lib/python3.10/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/local/lib/python3.10/site-packages/requests/sessions.py", line 587, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/local/lib/python3.10/site-packages/requests/sessions.py", line 701, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/local/lib/python3.10/site-packages/requests/adapters.py", line 565, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='192.168.10.183', port=80): Max retries exceeded with url: /live (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f9f4e3520>: Failed to establish a new connection: [Errno 113] Host is unreachable'))
+2022-09-14 20:30:32.779 WARNING (MainThread) [hass_nabucasa.cloud_api] Fetched https://alexa-api.nabucasa.com/access_token (400)
+2022-09-14 20:30:32.782 ERROR (MainThread) [homeassistant] Error doing job: Task exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/components/cloud/alexa_config.py", line 392, in _handle_entity_registry_updated
+    await self._sync_helper(to_update, to_remove)
+  File "/usr/src/homeassistant/homeassistant/components/cloud/alexa_config.py", line 336, in _sync_helper
+    await self.async_get_access_token()
+  File "/usr/src/homeassistant/homeassistant/components/cloud/alexa_config.py", line 187, in async_get_access_token
+    raise alexa_errors.RequireRelink
+homeassistant.components.alexa.errors.RequireRelink
+2022-09-14 20:30:32.789 WARNING (MainThread) [hass_nabucasa.cloud_api] Fetched https://alexa-api.nabucasa.com/access_token (400)
+2022-09-14 20:30:32.791 ERROR (MainThread) [homeassistant] Error doing job: Task exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/components/cloud/alexa_config.py", line 392, in _handle_entity_registry_updated
+    await self._sync_helper(to_update, to_remove)
+  File "/usr/src/homeassistant/homeassistant/components/cloud/alexa_config.py", line 336, in _sync_helper
+    await self.async_get_access_token()
+  File "/usr/src/homeassistant/homeassistant/components/cloud/alexa_config.py", line 187, in async_get_access_token
+    raise alexa_errors.RequireRelink
+homeassistant.components.alexa.errors.RequireRelink
+2022-09-14 20:30:32.795 WARNING (MainThread) [hass_nabucasa.cloud_api] Fetched https://alexa-api.nabucasa.com/access_token (400)
+2022-09-14 20:30:32.798 ERROR (MainThread) [homeassistant] Error doing job: Task exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/components/cloud/alexa_config.py", line 392, in _handle_entity_registry_updated
+    await self._sync_helper(to_update, to_remove)
+  File "/usr/src/homeassistant/homeassistant/components/cloud/alexa_config.py", line 336, in _sync_helper
+    await self.async_get_access_token()
+  File "/usr/src/homeassistant/homeassistant/components/cloud/alexa_config.py", line 187, in async_get_access_token
+    raise alexa_errors.RequireRelink
+homeassistant.components.alexa.errors.RequireRelink
+2022-09-14 20:30:32.802 WARNING (MainThread) [hass_nabucasa.cloud_api] Fetched https://alexa-api.nabucasa.com/access_token (400)
+2022-09-14 20:30:32.804 ERROR (MainThread) [homeassistant] Error doing job: Task exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/components/cloud/alexa_config.py", line 392, in _handle_entity_registry_updated
+    await self._sync_helper(to_update, to_remove)
+  File "/usr/src/homeassistant/homeassistant/components/cloud/alexa_config.py", line 336, in _sync_helper
+    await self.async_get_access_token()
+  File "/usr/src/homeassistant/homeassistant/components/cloud/alexa_config.py", line 187, in async_get_access_token
+    raise alexa_errors.RequireRelink
+homeassistant.components.alexa.errors.RequireRelink
+2022-09-14 20:30:32.808 WARNING (MainThread) [hass_nabucasa.cloud_api] Fetched https://alexa-api.nabucasa.com/access_token (400)
+2022-09-14 20:30:32.810 ERROR (MainThread) [homeassistant] Error doing job: Task exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/components/cloud/alexa_config.py", line 392, in _handle_entity_registry_updated
+    await self._sync_helper(to_update, to_remove)
+  File "/usr/src/homeassistant/homeassistant/components/cloud/alexa_config.py", line 336, in _sync_helper
+    await self.async_get_access_token()
+  File "/usr/src/homeassistant/homeassistant/components/cloud/alexa_config.py", line 187, in async_get_access_token
+    raise alexa_errors.RequireRelink
+homeassistant.components.alexa.errors.RequireRelink
+2022-09-14 20:30:32.814 WARNING (MainThread) [hass_nabucasa.cloud_api] Fetched https://alexa-api.nabucasa.com/access_token (400)
+2022-09-14 20:30:32.816 ERROR (MainThread) [homeassistant] Error doing job: Task exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/components/cloud/alexa_config.py", line 392, in _handle_entity_registry_updated
+    await self._sync_helper(to_update, to_remove)
+  File "/usr/src/homeassistant/homeassistant/components/cloud/alexa_config.py", line 336, in _sync_helper
+    await self.async_get_access_token()
+  File "/usr/src/homeassistant/homeassistant/components/cloud/alexa_config.py", line 187, in async_get_access_token
+    raise alexa_errors.RequireRelink
+homeassistant.components.alexa.errors.RequireRelink
+2022-09-14 20:30:32.821 WARNING (MainThread) [hass_nabucasa.cloud_api] Fetched https://alexa-api.nabucasa.com/access_token (400)
+2022-09-14 20:30:32.823 ERROR (MainThread) [homeassistant] Error doing job: Task exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/components/cloud/alexa_config.py", line 392, in _handle_entity_registry_updated
+    await self._sync_helper(to_update, to_remove)
+  File "/usr/src/homeassistant/homeassistant/components/cloud/alexa_config.py", line 336, in _sync_helper
+    await self.async_get_access_token()
+  File "/usr/src/homeassistant/homeassistant/components/cloud/alexa_config.py", line 187, in async_get_access_token
+    raise alexa_errors.RequireRelink
+homeassistant.components.alexa.errors.RequireRelink
+2022-09-14 20:30:32.982 WARNING (MainThread) [hass_nabucasa.cloud_api] Fetched https://alexa-api.nabucasa.com/access_token (400)
+2022-09-14 20:30:32.984 ERROR (MainThread) [homeassistant] Error doing job: Task exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/components/cloud/alexa_config.py", line 392, in _handle_entity_registry_updated
+    await self._sync_helper(to_update, to_remove)
+  File "/usr/src/homeassistant/homeassistant/components/cloud/alexa_config.py", line 336, in _sync_helper
+    await self.async_get_access_token()
+  File "/usr/src/homeassistant/homeassistant/components/cloud/alexa_config.py", line 187, in async_get_access_token
+    raise alexa_errors.RequireRelink
+homeassistant.components.alexa.errors.RequireRelink
+2022-09-14 20:30:34.957 WARNING (MainThread) [hass_nabucasa.cloud_api] Fetched https://alexa-api.nabucasa.com/access_token (400)
+2022-09-14 20:30:34.960 ERROR (MainThread) [homeassistant] Error doing job: Task exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/components/cloud/alexa_config.py", line 392, in _handle_entity_registry_updated
+    await self._sync_helper(to_update, to_remove)
+  File "/usr/src/homeassistant/homeassistant/components/cloud/alexa_config.py", line 336, in _sync_helper
+    await self.async_get_access_token()
+  File "/usr/src/homeassistant/homeassistant/components/cloud/alexa_config.py", line 187, in async_get_access_token
+    raise alexa_errors.RequireRelink
+homeassistant.components.alexa.errors.RequireRelink
+2022-09-14 20:30:35.201 WARNING (MainThread) [hass_nabucasa.cloud_api] Fetched https://alexa-api.nabucasa.com/access_token (400)
+2022-09-14 20:30:35.204 ERROR (MainThread) [homeassistant] Error doing job: Task exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/components/cloud/alexa_config.py", line 392, in _handle_entity_registry_updated
+    await self._sync_helper(to_update, to_remove)
+  File "/usr/src/homeassistant/homeassistant/components/cloud/alexa_config.py", line 336, in _sync_helper
+    await self.async_get_access_token()
+  File "/usr/src/homeassistant/homeassistant/components/cloud/alexa_config.py", line 187, in async_get_access_token
+    raise alexa_errors.RequireRelink
+homeassistant.components.alexa.errors.RequireRelink
+2022-09-14 20:30:35.761 WARNING (MainThread) [hass_nabucasa.cloud_api] Fetched https://alexa-api.nabucasa.com/access_token (400)
+2022-09-14 20:30:35.763 ERROR (MainThread) [homeassistant] Error doing job: Task exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/components/cloud/alexa_config.py", line 392, in _handle_entity_registry_updated
+    await self._sync_helper(to_update, to_remove)
+  File "/usr/src/homeassistant/homeassistant/components/cloud/alexa_config.py", line 336, in _sync_helper
+    await self.async_get_access_token()
+  File "/usr/src/homeassistant/homeassistant/components/cloud/alexa_config.py", line 187, in async_get_access_token
+    raise alexa_errors.RequireRelink
+homeassistant.components.alexa.errors.RequireRelink
+2022-09-14 20:30:35.776 WARNING (MainThread) [hass_nabucasa.cloud_api] Fetched https://alexa-api.nabucasa.com/access_token (400)
+2022-09-14 20:30:35.778 ERROR (MainThread) [homeassistant] Error doing job: Task exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/components/cloud/alexa_config.py", line 392, in _handle_entity_registry_updated
+    await self._sync_helper(to_update, to_remove)
+  File "/usr/src/homeassistant/homeassistant/components/cloud/alexa_config.py", line 336, in _sync_helper
+    await self.async_get_access_token()
+  File "/usr/src/homeassistant/homeassistant/components/cloud/alexa_config.py", line 187, in async_get_access_token
+    raise alexa_errors.RequireRelink
+homeassistant.components.alexa.errors.RequireRelink
+2022-09-14 20:30:35.844 WARNING (MainThread) [hass_nabucasa.cloud_api] Fetched https://alexa-api.nabucasa.com/access_token (400)
+2022-09-14 20:30:35.847 ERROR (MainThread) [homeassistant] Error doing job: Task exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/components/cloud/alexa_config.py", line 392, in _handle_entity_registry_updated
+    await self._sync_helper(to_update, to_remove)
+  File "/usr/src/homeassistant/homeassistant/components/cloud/alexa_config.py", line 336, in _sync_helper
+    await self.async_get_access_token()
+  File "/usr/src/homeassistant/homeassistant/components/cloud/alexa_config.py", line 187, in async_get_access_token
+    raise alexa_errors.RequireRelink
+homeassistant.components.alexa.errors.RequireRelink
+2022-09-14 20:30:35.856 WARNING (MainThread) [hass_nabucasa.cloud_api] Fetched https://alexa-api.nabucasa.com/access_token (400)
+2022-09-14 20:30:35.859 ERROR (MainThread) [homeassistant] Error doing job: Task exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/components/cloud/alexa_config.py", line 392, in _handle_entity_registry_updated
+    await self._sync_helper(to_update, to_remove)
+  File "/usr/src/homeassistant/homeassistant/components/cloud/alexa_config.py", line 336, in _sync_helper
+    await self.async_get_access_token()
+  File "/usr/src/homeassistant/homeassistant/components/cloud/alexa_config.py", line 187, in async_get_access_token
+    raise alexa_errors.RequireRelink
+homeassistant.components.alexa.errors.RequireRelink
+2022-09-14 20:30:35.939 WARNING (MainThread) [hass_nabucasa.cloud_api] Fetched https://alexa-api.nabucasa.com/access_token (400)
+2022-09-14 20:30:35.942 ERROR (MainThread) [homeassistant] Error doing job: Task exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/components/cloud/alexa_config.py", line 392, in _handle_entity_registry_updated
+    await self._sync_helper(to_update, to_remove)
+  File "/usr/src/homeassistant/homeassistant/components/cloud/alexa_config.py", line 336, in _sync_helper
+    await self.async_get_access_token()
+  File "/usr/src/homeassistant/homeassistant/components/cloud/alexa_config.py", line 187, in async_get_access_token
+    raise alexa_errors.RequireRelink
+homeassistant.components.alexa.errors.RequireRelink
+2022-09-14 20:30:36.018 WARNING (MainThread) [hass_nabucasa.cloud_api] Fetched https://alexa-api.nabucasa.com/access_token (400)
+2022-09-14 20:30:36.022 ERROR (MainThread) [homeassistant] Error doing job: Task exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/components/cloud/alexa_config.py", line 392, in _handle_entity_registry_updated
+    await self._sync_helper(to_update, to_remove)
+  File "/usr/src/homeassistant/homeassistant/components/cloud/alexa_config.py", line 336, in _sync_helper
+    await self.async_get_access_token()
+  File "/usr/src/homeassistant/homeassistant/components/cloud/alexa_config.py", line 187, in async_get_access_token
+    raise alexa_errors.RequireRelink
+homeassistant.components.alexa.errors.RequireRelink
+2022-09-14 20:31:02.798 WARNING (MainThread) [hass_nabucasa.cloud_api] Fetched https://alexa-api.nabucasa.com/access_token (400)
+2022-09-14 20:31:02.801 ERROR (MainThread) [homeassistant] Error doing job: Task exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/components/cloud/alexa_config.py", line 392, in _handle_entity_registry_updated
+    await self._sync_helper(to_update, to_remove)
+  File "/usr/src/homeassistant/homeassistant/components/cloud/alexa_config.py", line 336, in _sync_helper
+    await self.async_get_access_token()
+  File "/usr/src/homeassistant/homeassistant/components/cloud/alexa_config.py", line 187, in async_get_access_token
+    raise alexa_errors.RequireRelink
+homeassistant.components.alexa.errors.RequireRelink
+2022-09-14 20:31:02.807 WARNING (MainThread) [hass_nabucasa.cloud_api] Fetched https://alexa-api.nabucasa.com/access_token (400)
+2022-09-14 20:31:02.809 ERROR (MainThread) [homeassistant] Error doing job: Task exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/components/cloud/alexa_config.py", line 392, in _handle_entity_registry_updated
+    await self._sync_helper(to_update, to_remove)
+  File "/usr/src/homeassistant/homeassistant/components/cloud/alexa_config.py", line 336, in _sync_helper
+    await self.async_get_access_token()
+  File "/usr/src/homeassistant/homeassistant/components/cloud/alexa_config.py", line 187, in async_get_access_token
+    raise alexa_errors.RequireRelink
+homeassistant.components.alexa.errors.RequireRelink
+2022-09-14 20:31:02.815 WARNING (MainThread) [hass_nabucasa.cloud_api] Fetched https://alexa-api.nabucasa.com/access_token (400)
+2022-09-14 20:31:02.817 ERROR (MainThread) [homeassistant] Error doing job: Task exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/components/cloud/alexa_config.py", line 392, in _handle_entity_registry_updated
+    await self._sync_helper(to_update, to_remove)
+  File "/usr/src/homeassistant/homeassistant/components/cloud/alexa_config.py", line 336, in _sync_helper
+    await self.async_get_access_token()
+  File "/usr/src/homeassistant/homeassistant/components/cloud/alexa_config.py", line 187, in async_get_access_token
+    raise alexa_errors.RequireRelink
+homeassistant.components.alexa.errors.RequireRelink
+2022-09-14 20:31:02.827 WARNING (MainThread) [hass_nabucasa.cloud_api] Fetched https://alexa-api.nabucasa.com/access_token (400)
+2022-09-14 20:31:02.829 ERROR (MainThread) [homeassistant] Error doing job: Task exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/components/cloud/alexa_config.py", line 392, in _handle_entity_registry_updated
+    await self._sync_helper(to_update, to_remove)
+  File "/usr/src/homeassistant/homeassistant/components/cloud/alexa_config.py", line 336, in _sync_helper
+    await self.async_get_access_token()
+  File "/usr/src/homeassistant/homeassistant/components/cloud/alexa_config.py", line 187, in async_get_access_token
+    raise alexa_errors.RequireRelink
+homeassistant.components.alexa.errors.RequireRelink
+2022-09-14 20:31:02.856 WARNING (MainThread) [hass_nabucasa.cloud_api] Fetched https://alexa-api.nabucasa.com/access_token (400)
+2022-09-14 20:31:02.859 ERROR (MainThread) [homeassistant] Error doing job: Task exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/components/cloud/alexa_config.py", line 392, in _handle_entity_registry_updated
+    await self._sync_helper(to_update, to_remove)
+  File "/usr/src/homeassistant/homeassistant/components/cloud/alexa_config.py", line 336, in _sync_helper
+    await self.async_get_access_token()
+  File "/usr/src/homeassistant/homeassistant/components/cloud/alexa_config.py", line 187, in async_get_access_token
+    raise alexa_errors.RequireRelink
+homeassistant.components.alexa.errors.RequireRelink
+2022-09-14 20:31:02.916 WARNING (MainThread) [hass_nabucasa.cloud_api] Fetched https://alexa-api.nabucasa.com/access_token (400)
+2022-09-14 20:31:02.919 ERROR (MainThread) [homeassistant] Error doing job: Task exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/components/cloud/alexa_config.py", line 392, in _handle_entity_registry_updated
+    await self._sync_helper(to_update, to_remove)
+  File "/usr/src/homeassistant/homeassistant/components/cloud/alexa_config.py", line 336, in _sync_helper
+    await self.async_get_access_token()
+  File "/usr/src/homeassistant/homeassistant/components/cloud/alexa_config.py", line 187, in async_get_access_token
+    raise alexa_errors.RequireRelink
+homeassistant.components.alexa.errors.RequireRelink
+2022-09-14 20:31:02.957 WARNING (MainThread) [hass_nabucasa.cloud_api] Fetched https://alexa-api.nabucasa.com/access_token (400)
+2022-09-14 20:31:02.960 ERROR (MainThread) [homeassistant] Error doing job: Task exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/components/cloud/alexa_config.py", line 392, in _handle_entity_registry_updated
+    await self._sync_helper(to_update, to_remove)
+  File "/usr/src/homeassistant/homeassistant/components/cloud/alexa_config.py", line 336, in _sync_helper
+    await self.async_get_access_token()
+  File "/usr/src/homeassistant/homeassistant/components/cloud/alexa_config.py", line 187, in async_get_access_token
+    raise alexa_errors.RequireRelink
+homeassistant.components.alexa.errors.RequireRelink
+2022-09-14 20:31:02.966 WARNING (MainThread) [hass_nabucasa.cloud_api] Fetched https://alexa-api.nabucasa.com/access_token (400)
+2022-09-14 20:31:02.969 ERROR (MainThread) [homeassistant] Error doing job: Task exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/components/cloud/alexa_config.py", line 392, in _handle_entity_registry_updated
+    await self._sync_helper(to_update, to_remove)
+  File "/usr/src/homeassistant/homeassistant/components/cloud/alexa_config.py", line 336, in _sync_helper
+    await self.async_get_access_token()
+  File "/usr/src/homeassistant/homeassistant/components/cloud/alexa_config.py", line 187, in async_get_access_token
+    raise alexa_errors.RequireRelink
+homeassistant.components.alexa.errors.RequireRelink
+2022-09-14 20:31:03.634 WARNING (MainThread) [hass_nabucasa.cloud_api] Fetched https://alexa-api.nabucasa.com/access_token (400)
+2022-09-14 20:31:03.636 ERROR (MainThread) [homeassistant] Error doing job: Task exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/components/cloud/alexa_config.py", line 392, in _handle_entity_registry_updated
+    await self._sync_helper(to_update, to_remove)
+  File "/usr/src/homeassistant/homeassistant/components/cloud/alexa_config.py", line 336, in _sync_helper
+    await self.async_get_access_token()
+  File "/usr/src/homeassistant/homeassistant/components/cloud/alexa_config.py", line 187, in async_get_access_token
+    raise alexa_errors.RequireRelink
+homeassistant.components.alexa.errors.RequireRelink
+2022-09-14 20:31:03.860 WARNING (MainThread) [hass_nabucasa.cloud_api] Fetched https://alexa-api.nabucasa.com/access_token (400)
+2022-09-14 20:31:03.862 ERROR (MainThread) [homeassistant] Error doing job: Task exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/components/cloud/alexa_config.py", line 392, in _handle_entity_registry_updated
+    await self._sync_helper(to_update, to_remove)
+  File "/usr/src/homeassistant/homeassistant/components/cloud/alexa_config.py", line 336, in _sync_helper
+    await self.async_get_access_token()
+  File "/usr/src/homeassistant/homeassistant/components/cloud/alexa_config.py", line 187, in async_get_access_token
+    raise alexa_errors.RequireRelink
+homeassistant.components.alexa.errors.RequireRelink
+2022-09-14 20:31:03.980 WARNING (MainThread) [hass_nabucasa.cloud_api] Fetched https://alexa-api.nabucasa.com/access_token (400)
+2022-09-14 20:31:03.982 ERROR (MainThread) [homeassistant] Error doing job: Task exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/components/cloud/alexa_config.py", line 392, in _handle_entity_registry_updated
+    await self._sync_helper(to_update, to_remove)
+  File "/usr/src/homeassistant/homeassistant/components/cloud/alexa_config.py", line 336, in _sync_helper
+    await self.async_get_access_token()
+  File "/usr/src/homeassistant/homeassistant/components/cloud/alexa_config.py", line 187, in async_get_access_token
+    raise alexa_errors.RequireRelink
+homeassistant.components.alexa.errors.RequireRelink
+2022-09-14 20:31:03.987 WARNING (MainThread) [hass_nabucasa.cloud_api] Fetched https://alexa-api.nabucasa.com/access_token (400)
+2022-09-14 20:31:03.988 ERROR (MainThread) [homeassistant] Error doing job: Task exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/components/cloud/alexa_config.py", line 392, in _handle_entity_registry_updated
+    await self._sync_helper(to_update, to_remove)
+  File "/usr/src/homeassistant/homeassistant/components/cloud/alexa_config.py", line 336, in _sync_helper
+    await self.async_get_access_token()
+  File "/usr/src/homeassistant/homeassistant/components/cloud/alexa_config.py", line 187, in async_get_access_token
+    raise alexa_errors.RequireRelink
+homeassistant.components.alexa.errors.RequireRelink
+2022-09-14 20:31:04.040 WARNING (MainThread) [hass_nabucasa.cloud_api] Fetched https://alexa-api.nabucasa.com/access_token (400)
+2022-09-14 20:31:04.044 ERROR (MainThread) [homeassistant] Error doing job: Task exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/components/cloud/alexa_config.py", line 392, in _handle_entity_registry_updated
+    await self._sync_helper(to_update, to_remove)
+  File "/usr/src/homeassistant/homeassistant/components/cloud/alexa_config.py", line 336, in _sync_helper
+    await self.async_get_access_token()
+  File "/usr/src/homeassistant/homeassistant/components/cloud/alexa_config.py", line 187, in async_get_access_token
+    raise alexa_errors.RequireRelink
+homeassistant.components.alexa.errors.RequireRelink
+2022-09-14 20:31:04.055 WARNING (MainThread) [hass_nabucasa.cloud_api] Fetched https://alexa-api.nabucasa.com/access_token (400)
+2022-09-14 20:31:04.058 ERROR (MainThread) [homeassistant] Error doing job: Task exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/components/cloud/alexa_config.py", line 392, in _handle_entity_registry_updated
+    await self._sync_helper(to_update, to_remove)
+  File "/usr/src/homeassistant/homeassistant/components/cloud/alexa_config.py", line 336, in _sync_helper
+    await self.async_get_access_token()
+  File "/usr/src/homeassistant/homeassistant/components/cloud/alexa_config.py", line 187, in async_get_access_token
+    raise alexa_errors.RequireRelink
+homeassistant.components.alexa.errors.RequireRelink
+2022-09-14 20:31:04.228 WARNING (MainThread) [hass_nabucasa.cloud_api] Fetched https://alexa-api.nabucasa.com/access_token (400)
+2022-09-14 20:31:04.231 ERROR (MainThread) [homeassistant] Error doing job: Task exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/components/cloud/alexa_config.py", line 392, in _handle_entity_registry_updated
+    await self._sync_helper(to_update, to_remove)
+  File "/usr/src/homeassistant/homeassistant/components/cloud/alexa_config.py", line 336, in _sync_helper
+    await self.async_get_access_token()
+  File "/usr/src/homeassistant/homeassistant/components/cloud/alexa_config.py", line 187, in async_get_access_token
+    raise alexa_errors.RequireRelink
+homeassistant.components.alexa.errors.RequireRelink
+2022-09-14 20:31:04.235 WARNING (MainThread) [hass_nabucasa.cloud_api] Fetched https://alexa-api.nabucasa.com/access_token (400)
+2022-09-14 20:31:04.237 ERROR (MainThread) [homeassistant] Error doing job: Task exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/components/cloud/alexa_config.py", line 392, in _handle_entity_registry_updated
+    await self._sync_helper(to_update, to_remove)
+  File "/usr/src/homeassistant/homeassistant/components/cloud/alexa_config.py", line 336, in _sync_helper
+    await self.async_get_access_token()
+  File "/usr/src/homeassistant/homeassistant/components/cloud/alexa_config.py", line 187, in async_get_access_token
+    raise alexa_errors.RequireRelink
+homeassistant.components.alexa.errors.RequireRelink
+2022-09-15 18:25:01.711 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for esp32-cam @ 192.168.10.183: Error connecting to ('192.168.10.183', 6053): [Errno 111] Connect call failed ('192.168.10.183', 6053)
+2022-09-15 18:33:11.166 ERROR (MainThread) [aiohttp.server] Error handling request
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/urllib3/connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+  File "/usr/local/lib/python3.10/site-packages/urllib3/util/connection.py", line 95, in create_connection
+    raise err
+  File "/usr/local/lib/python3.10/site-packages/urllib3/util/connection.py", line 85, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/urllib3/connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "/usr/local/lib/python3.10/site-packages/urllib3/connectionpool.py", line 398, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/usr/local/lib/python3.10/site-packages/urllib3/connection.py", line 239, in request
+    super(HTTPConnection, self).request(method, url, body=body, headers=headers)
+  File "/usr/local/lib/python3.10/http/client.py", line 1282, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/usr/local/lib/python3.10/http/client.py", line 1328, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/usr/local/lib/python3.10/http/client.py", line 1277, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/local/lib/python3.10/http/client.py", line 1037, in _send_output
+    self.send(msg)
+  File "/usr/local/lib/python3.10/http/client.py", line 975, in send
+    self.connect()
+  File "/usr/local/lib/python3.10/site-packages/urllib3/connection.py", line 205, in connect
+    conn = self._new_conn()
+  File "/usr/local/lib/python3.10/site-packages/urllib3/connection.py", line 186, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7fafe23370>: Failed to establish a new connection: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/requests/adapters.py", line 489, in send
+    resp = conn.urlopen(
+  File "/usr/local/lib/python3.10/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    retries = retries.increment(
+  File "/usr/local/lib/python3.10/site-packages/urllib3/util/retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='192.168.10.183', port=80): Max retries exceeded with url: /live (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fafe23370>: Failed to establish a new connection: [Errno 111] Connection refused'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_protocol.py", line 435, in _handle_request
+    resp = await request_handler(request)
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_app.py", line 504, in _handle
+    resp = await handler(request)
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_middlewares.py", line 117, in impl
+    return await handler(request)
+  File "/usr/src/homeassistant/homeassistant/components/http/security_filter.py", line 60, in security_filter_middleware
+    return await handler(request)
+  File "/usr/src/homeassistant/homeassistant/components/http/forwarded.py", line 100, in forwarded_middleware
+    return await handler(request)
+  File "/usr/src/homeassistant/homeassistant/components/http/request_context.py", line 28, in request_context_middleware
+    return await handler(request)
+  File "/usr/src/homeassistant/homeassistant/components/http/ban.py", line 82, in ban_middleware
+    return await handler(request)
+  File "/usr/src/homeassistant/homeassistant/components/http/auth.py", line 236, in auth_middleware
+    return await handler(request)
+  File "/usr/src/homeassistant/homeassistant/components/http/view.py", line 136, in handle
+    result = await result
+  File "/usr/src/homeassistant/homeassistant/components/camera/__init__.py", line 729, in get
+    return await self.handle(request, camera)
+  File "/usr/src/homeassistant/homeassistant/components/camera/__init__.py", line 747, in handle
+    image = await _async_get_image(
+  File "/usr/src/homeassistant/homeassistant/components/camera/__init__.py", line 169, in _async_get_image
+    if image_bytes := await camera.async_camera_image(
+  File "/usr/src/homeassistant/homeassistant/components/mjpeg/camera.py", line 130, in async_camera_image
+    image = await self.hass.async_add_executor_job(self.camera_image)
+  File "/usr/local/lib/python3.10/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/usr/src/homeassistant/homeassistant/components/mjpeg/camera.py", line 168, in camera_image
+    req = requests.get(self._mjpeg_url, stream=True, timeout=10)
+  File "/usr/local/lib/python3.10/site-packages/requests/api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+  File "/usr/local/lib/python3.10/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/local/lib/python3.10/site-packages/requests/sessions.py", line 587, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/local/lib/python3.10/site-packages/requests/sessions.py", line 701, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/local/lib/python3.10/site-packages/requests/adapters.py", line 565, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='192.168.10.183', port=80): Max retries exceeded with url: /live (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fafe23370>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2022-09-15 18:33:40.861 ERROR (MainThread) [aiohttp.server] Error handling request
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/urllib3/connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+  File "/usr/local/lib/python3.10/site-packages/urllib3/util/connection.py", line 95, in create_connection
+    raise err
+  File "/usr/local/lib/python3.10/site-packages/urllib3/util/connection.py", line 85, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/urllib3/connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "/usr/local/lib/python3.10/site-packages/urllib3/connectionpool.py", line 398, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/usr/local/lib/python3.10/site-packages/urllib3/connection.py", line 239, in request
+    super(HTTPConnection, self).request(method, url, body=body, headers=headers)
+  File "/usr/local/lib/python3.10/http/client.py", line 1282, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/usr/local/lib/python3.10/http/client.py", line 1328, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/usr/local/lib/python3.10/http/client.py", line 1277, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/local/lib/python3.10/http/client.py", line 1037, in _send_output
+    self.send(msg)
+  File "/usr/local/lib/python3.10/http/client.py", line 975, in send
+    self.connect()
+  File "/usr/local/lib/python3.10/site-packages/urllib3/connection.py", line 205, in connect
+    conn = self._new_conn()
+  File "/usr/local/lib/python3.10/site-packages/urllib3/connection.py", line 186, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7f9da00220>: Failed to establish a new connection: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/requests/adapters.py", line 489, in send
+    resp = conn.urlopen(
+  File "/usr/local/lib/python3.10/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    retries = retries.increment(
+  File "/usr/local/lib/python3.10/site-packages/urllib3/util/retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='192.168.10.183', port=80): Max retries exceeded with url: /live (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f9da00220>: Failed to establish a new connection: [Errno 111] Connection refused'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_protocol.py", line 435, in _handle_request
+    resp = await request_handler(request)
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_app.py", line 504, in _handle
+    resp = await handler(request)
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_middlewares.py", line 117, in impl
+    return await handler(request)
+  File "/usr/src/homeassistant/homeassistant/components/http/security_filter.py", line 60, in security_filter_middleware
+    return await handler(request)
+  File "/usr/src/homeassistant/homeassistant/components/http/forwarded.py", line 100, in forwarded_middleware
+    return await handler(request)
+  File "/usr/src/homeassistant/homeassistant/components/http/request_context.py", line 28, in request_context_middleware
+    return await handler(request)
+  File "/usr/src/homeassistant/homeassistant/components/http/ban.py", line 82, in ban_middleware
+    return await handler(request)
+  File "/usr/src/homeassistant/homeassistant/components/http/auth.py", line 236, in auth_middleware
+    return await handler(request)
+  File "/usr/src/homeassistant/homeassistant/components/http/view.py", line 136, in handle
+    result = await result
+  File "/usr/src/homeassistant/homeassistant/components/camera/__init__.py", line 729, in get
+    return await self.handle(request, camera)
+  File "/usr/src/homeassistant/homeassistant/components/camera/__init__.py", line 747, in handle
+    image = await _async_get_image(
+  File "/usr/src/homeassistant/homeassistant/components/camera/__init__.py", line 169, in _async_get_image
+    if image_bytes := await camera.async_camera_image(
+  File "/usr/src/homeassistant/homeassistant/components/mjpeg/camera.py", line 130, in async_camera_image
+    image = await self.hass.async_add_executor_job(self.camera_image)
+  File "/usr/local/lib/python3.10/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/usr/src/homeassistant/homeassistant/components/mjpeg/camera.py", line 168, in camera_image
+    req = requests.get(self._mjpeg_url, stream=True, timeout=10)
+  File "/usr/local/lib/python3.10/site-packages/requests/api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+  File "/usr/local/lib/python3.10/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/local/lib/python3.10/site-packages/requests/sessions.py", line 587, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/local/lib/python3.10/site-packages/requests/sessions.py", line 701, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/local/lib/python3.10/site-packages/requests/adapters.py", line 565, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='192.168.10.183', port=80): Max retries exceeded with url: /live (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f9da00220>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2022-09-15 21:09:35.368 WARNING (MainThread) [hass_nabucasa.iot] Connection closed: Closed by server. A newer instance connected (4002)
+2022-09-15 21:09:41.209 WARNING (MainThread) [hass_nabucasa.iot] Connection closed: Closed by server. A newer instance connected (4002)
+2022-09-15 21:09:51.201 WARNING (MainThread) [hass_nabucasa.iot] Connection closed: Closed by server. A newer instance connected (4002)
+2022-09-15 21:10:12.188 WARNING (MainThread) [hass_nabucasa.iot] Connection closed: Closed by server. A newer instance connected (4002)
+2022-09-15 21:10:57.075 WARNING (MainThread) [hass_nabucasa.iot] Connection closed: Closed by server. A newer instance connected (4002)
+2022-09-16 12:40:48.755 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for esp32-cam @ 192.168.10.183: Error connecting to ('192.168.10.183', 6053): [Errno 113] Connect call failed ('192.168.10.183', 6053)
+2022-09-16 12:40:52.148 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for esp32-doit-temp @ 192.168.10.134: Error connecting to ('192.168.10.134', 6053): [Errno 113] Connect call failed ('192.168.10.134', 6053)
+2022-09-16 12:41:32.803 ERROR (MainThread) [async_upnp_client.ssdp] Received error: [Errno 101] Network unreachable, transport: <_SelectorDatagramTransport fd=21 read=polling write=<idle, bufsize=0>>
+2022-09-16 12:41:32.812 ERROR (MainThread) [async_upnp_client.ssdp] Received error: [Errno 101] Network unreachable, transport: <_SelectorDatagramTransport fd=21 read=polling write=<idle, bufsize=0>>
+2022-09-16 12:42:11.906 ERROR (MainThread) [snitun.multiplexer.core] Ping fails, no response from peer
+2022-09-16 14:58:34.995 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for esp32-cam @ 192.168.10.183: Error connecting to ('192.168.10.183', 6053): [Errno 113] Connect call failed ('192.168.10.183', 6053)
+2022-09-16 14:58:41.491 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for esp32-doit-temp @ 192.168.10.177: Error connecting to ('192.168.10.177', 6053): [Errno 113] Connect call failed ('192.168.10.177', 6053)
+2022-09-16 14:59:55.257 ERROR (MainThread) [snitun.multiplexer.core] Ping fails, no response from peer

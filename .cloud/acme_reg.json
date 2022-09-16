@@ -1,0 +1,15 @@
+{
+    "body": {
+        "contact": [
+            "mailto:sys.andante@gmail.com"
+        ],
+        "key": {
+            "e": "AQAB",
+            "kty": "RSA",
+            "n": "6LGhDqYMmPTFoQVZywOEV6Fyk0GtzrsJH6tL641EPUh0b4XRsIdYPvulSH-TptuXBcmDnhNRfN25PQzJ58ECuQvfBMDDdxb117iou5lScVzUMuMU6UN2149198n5CwbtQ_AADojjdK3e5dBiXdJLru-iKrafTMWSDrLMi-4WApvhCfG_M9ozldfv1xqMvvachEE3e119OYMtjgU6s9b7zOA1eRqwFFlb8FNxSTjQPqz7bjqpqkl9SRbmsG0K5WZ6xziyGAOSm13Q7PwqYxfNznBWTQ8Z9IeZ-pxql1AL2k-rWpYT5meeeHRQBHUlZ-CxUysdXmjW7Km2yiVkNIkmWQ"
+        },
+        "status": "valid"
+    },
+    "terms_of_service": "https://letsencrypt.org/documents/LE-SA-v1.2-November-15-2017-w-v1.3-notice.pdf",
+    "uri": "https://acme-v02.api.letsencrypt.org/acme/acct/729621307"
+}

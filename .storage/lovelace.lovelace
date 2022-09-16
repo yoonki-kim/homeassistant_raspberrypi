@@ -1,0 +1,147 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "lovelace.lovelace",
+  "data": {
+    "config": {
+      "title": "Office_RaspberryPi",
+      "views": [
+        {
+          "path": "default_view",
+          "title": "Home",
+          "cards": [
+            {
+              "type": "grid",
+              "square": false,
+              "columns": 1,
+              "cards": [
+                {
+                  "type": "entities",
+                  "entities": [
+                    "switch.esp32_cam_flash_1sec_on",
+                    "light.esp32_cam_flash_on_off",
+                    "light.esp32_doit_led_on_off",
+                    "switch.esp32_doit_led_1sec_on",
+                    "binary_sensor.mq_5_gas_digital",
+                    "binary_sensor.flame_sensor_digital",
+                    "binary_sensor.sound_sensor_digital",
+                    "sensor.office_temperature",
+                    "sensor.office_humidity",
+                    "sensor.mq_5_gas_analog",
+                    "sensor.flame_sensor_analog",
+                    "sensor.uv_sensor_analog",
+                    "sensor.sound_sensor_analog",
+                    "cover.motor1",
+                    "switch.onboard_led"
+                  ],
+                  "title": "test"
+                },
+                {
+                  "type": "picture-entity",
+                  "entity": "camera.esp32_cam"
+                },
+                {
+                  "type": "picture-entity",
+                  "entity": "camera.iphone6s"
+                }
+              ]
+            },
+            {
+              "type": "entities",
+              "entities": [
+                "person.yoonki"
+              ]
+            },
+            {
+              "type": "weather-forecast",
+              "entity": "weather.forecast_office_raspberrypi",
+              "show_forecast": false
+            },
+            {
+              "type": "entities",
+              "entities": [
+                "switch.camera_flip",
+                "switch.camera_torch"
+              ],
+              "title": "스위치"
+            }
+          ]
+        },
+        {
+          "theme": "Backend-selected",
+          "title": "iPhone6s",
+          "path": "iphone6s",
+          "badges": [],
+          "cards": [
+            {
+              "type": "entities",
+              "entities": [
+                {
+                  "entity": "sensor.yoonkis_iphone_activity",
+                  "name": "Activity"
+                },
+                {
+                  "entity": "sensor.yoonkis_iphone_average_active_pace",
+                  "name": "Average Active Pace"
+                },
+                {
+                  "entity": "sensor.yoonkis_iphone_bssid",
+                  "name": "BSSID"
+                },
+                {
+                  "entity": "sensor.yoonkis_iphone_battery_state",
+                  "name": "Battery State"
+                },
+                {
+                  "entity": "sensor.yoonkis_iphone_connection_type",
+                  "name": "Connection Type"
+                },
+                {
+                  "entity": "sensor.yoonkis_iphone_distance",
+                  "name": "Distance"
+                },
+                {
+                  "entity": "sensor.yoonkis_iphone_floors_ascended",
+                  "name": "Floors Ascended"
+                },
+                {
+                  "entity": "sensor.yoonkis_iphone_floors_descended",
+                  "name": "Floors Descended"
+                },
+                {
+                  "entity": "binary_sensor.yoonkis_iphone_focus",
+                  "name": "Focus"
+                },
+                {
+                  "entity": "sensor.yoonkis_iphone_geocoded_location",
+                  "name": "Geocoded Location"
+                },
+                {
+                  "entity": "sensor.yoonkis_iphone_last_update_trigger",
+                  "name": "Last Update Trigger"
+                },
+                {
+                  "entity": "sensor.yoonkis_iphone_sim_1",
+                  "name": "SIM 1"
+                },
+                {
+                  "entity": "sensor.yoonkis_iphone_ssid",
+                  "name": "SSID"
+                },
+                {
+                  "entity": "sensor.yoonkis_iphone_steps",
+                  "name": "Steps"
+                },
+                {
+                  "entity": "sensor.yoonkis_iphone_storage",
+                  "name": "Storage"
+                }
+              ],
+              "title": "Yoonki’s iPhone"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

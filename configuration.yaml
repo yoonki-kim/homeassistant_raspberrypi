@@ -1,3 +1,11 @@
+# Panel_iframe
+panel_iframe:
+  portainer:
+    title: "Portainer"
+    url: "http://192.168.10.101:9000/#/containers"
+    icon: mdi:docker
+    require_admin: true
+
 # Loads default set of integrations. Do not remove.
 default_config:
 
@@ -9,18 +17,10 @@ automation: !include automations.yaml
 script: !include scripts.yaml
 scene: !include scenes.yaml
 
-# Panel_iframe
-panel_iframe:
-  portainer:
-    title: "Portainer"
-    url: "http://192.168.2.100:9000/#/containers"
-    icon: mdi:docker
-    require_admin: true
-
 # stream:
-# ffmpeg:
-#   ffmpeg_bin: /usr/bin/ffmpeg
+# # ffmpeg:
+# #   ffmpeg_bin: /usr/bin/ffmpeg
 # camera:
 #   - platform: mjpeg
 #     name: iphone6s
-#     mjpeg_url: http://192.168.2.13/live
+#     mjpeg_url: http://192.168.10.183/live

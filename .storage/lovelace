@@ -89,13 +89,9 @@
               "show_name": true,
               "camera_view": "auto",
               "type": "picture-entity",
-              "entity": "camera.esp32_cam",
-              "hold_action": {
-                "action": "call-service",
-                "service": "automation.reload",
-                "data": {},
-                "target": {}
-              }
+              "entity": "switch.esp32_cam_flash_1sec_on",
+              "image": "https://demo.home-assistant.io/stub_config/bedroom.png",
+              "camera_image": "camera.esp32_cam"
             },
             {
               "square": false,
@@ -168,11 +164,8 @@
           "badges": [],
           "cards": [
             {
-              "show_state": true,
-              "show_name": true,
-              "camera_view": "live",
               "type": "picture-entity",
-              "entity": "camera.iphone"
+              "entity": "camera.iphone6s"
             }
           ]
         }

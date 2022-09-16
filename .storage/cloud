@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "cloud",
+  "data": {
+    "alexa_default_expose": [
+      "climate",
+      "cover",
+      "fan",
+      "humidifier",
+      "light",
+      "lock",
+      "scene",
+      "script",
+      "sensor",
+      "switch",
+      "vacuum",
+      "water_heater"
+    ],
+    "alexa_entity_configs": {},
+    "cloud_user": "7cd658018ba749418579971fbb61e730",
+    "cloudhooks": {
+      "026b2153c47194f3f422fee1f08636e1fb2ba8eec47d97805333960c038cf90d": {
+        "webhook_id": "026b2153c47194f3f422fee1f08636e1fb2ba8eec47d97805333960c038cf90d",
+        "cloudhook_id": "6afe6d45ad8d4f11a53d93a66f2db0f9",
+        "cloudhook_url": "https://hooks.nabu.casa/gAAAAABjIWHlbr9u4cBHXfh0mYs0QR49dNPRA7erHPlQXpnNwY4r7URtpgqnSOYNeYAdm3UpNv24GiJtmSnxsm74apbokdikikje4vb3RBw7gbkEdy2O0nSX4FFvefe1NamjwpTmgkTl3SfpTVg0q2vlnyBKpPasqWAEgLdtOWDNqzezb6XNJKo=",
+        "managed": true
+      },
+      "ba3867e972031941ef3b95ab2344440ca11f417dd7ed68d24f6142f101df682b": {
+        "webhook_id": "ba3867e972031941ef3b95ab2344440ca11f417dd7ed68d24f6142f101df682b",
+        "cloudhook_id": "01e3ee3fca7e4376895ed0e4dfd83979",
+        "cloudhook_url": "https://hooks.nabu.casa/gAAAAABjIbt1DCq5AItwd_xBWXSAd-bGJ7iL_TCYybufLiDub4PeerCKhFFmXVNUFfYhsuwFkLaEj5AZ9HQdVTs8m7NDUZFhT5ZtcAwOzHe0O8dv_-hQJ_WlE0w8kxRfDN1R0VSifjvJeMFzdfxU8LkGP8W0MFyTnWBPu-EHWXSs5KtfJAyDUIw=",
+        "managed": true
+      }
+    },
+    "alexa_enabled": true,
+    "google_enabled": true,
+    "remote_enabled": true,
+    "google_default_expose": [
+      "climate",
+      "cover",
+      "fan",
+      "humidifier",
+      "light",
+      "lock",
+      "scene",
+      "script",
+      "sensor",
+      "switch",
+      "vacuum",
+      "water_heater"
+    ],
+    "google_entity_configs": {},
+    "google_local_webhook_id": "1278ad34eb279e1d288c14f3dd8a1359252b080b33987fe2bfa23e3c529199df",
+    "google_secure_devices_pin": null,
+    "remote_domain": "431wi0flrkschqkb2yctp1ypkhwvh6ix.ui.nabu.casa",
+    "username": "b93862da-49ab-45dc-b12a-ad3c83d5ef49"
+  }
+}

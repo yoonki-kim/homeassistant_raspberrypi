@@ -18,8 +18,10 @@ ota:
   password: "3ee27c299f213a94f27d6329d7384bcb"
 
 wifi:
-  ssid: !secret wifi_ssid
-  password: !secret wifi_password
+  # ssid: !secret wifi_ssid
+  # password: !secret wifi_password
+  ssid: Andante_Systems_2.4G
+  password: andante2020
 
   # Enable fallback hotspot (captive portal) in case wifi connection fails
   ap:

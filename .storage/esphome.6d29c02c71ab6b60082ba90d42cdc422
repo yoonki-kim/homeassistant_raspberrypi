@@ -7,10 +7,10 @@
       "uses_password": false,
       "name": "esp32-doit-temp",
       "mac_address": "A4:CF:12:45:A2:C4",
-      "compilation_time": "Aug 16 2022, 17:58:36",
+      "compilation_time": "Sep  9 2022, 13:01:40",
       "model": "esp32dev",
       "has_deep_sleep": false,
-      "esphome_version": "2022.6.3",
+      "esphome_version": "2022.8.3",
       "project_name": "",
       "project_version": "",
       "webserver_port": 0

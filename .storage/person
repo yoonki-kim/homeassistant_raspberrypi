@@ -8,7 +8,8 @@
         "name": "yoonki",
         "user_id": "b5fc770375d448fc87c08b2ed57afbfb",
         "device_trackers": [
-          "device_tracker.yoonkis_iphone"
+          "device_tracker.yoonkis_iphone",
+          "device_tracker.yoonkis_ipad"
         ],
         "id": "yoonki",
         "picture": null
